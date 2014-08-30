@@ -1,0 +1,15 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=LooFTP
+Comment=Browse the File Transfer Protocol Servers
+Comment[zh_CN]=浏览 FTP 服务器
+GenericName=FTP Browser
+GenericName[zh_CN]=FTP 客户端
+X-GNOME-FullName=Loongson FTP Browser
+Exec=looftp
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=looftp
+Categories=Network;
+StartupNotify=true

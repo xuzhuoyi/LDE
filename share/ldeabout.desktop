@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=0.0.7
+Type=Application
+Name=About LDE
+Name[zh_CN]=关于 LDE
+Comment=The information of LDE
+Comment[zh_CN]=查看 LDE 版本、作者等信息
+Icon=ldeabout
+Exec=ldeabout
+Categories=Settings;DesktopSettings;Qt;
+StartupNotify=true
+Terminal=false

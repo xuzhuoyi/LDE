@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+# The names/descriptions should really be better
+Name=LDE
+Comment=LDE - Loongson desktop environment
+Comment[de]=LDE - Loongson Desktop-Umgebung
+Comment[fi]=LDE - Loongson työpöytäympäristö
+Comment[ja]=LDE - Loongson デスクトップ環境
+Comment[pt]=LDE - Loongson de trabalho X11 leve
+Comment[zh_CN]=LDE - 龙芯桌面环境
+Exec=/usr/bin/startlde
+# Icon=
+Type=Application

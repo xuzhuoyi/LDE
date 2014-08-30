@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=LRun
+Comment[zh_CN]=快速运行程序
+GenericName[zh_CN]=程序启动器
+Exec=lrun
+Icon=lrun
+Terminal=false
+StartupNotify=true
+Type=Application
+Categories=Qt;System;
+

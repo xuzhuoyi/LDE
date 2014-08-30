@@ -1,0 +1,20 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=Loogout
+Name[de]=Abmelden
+Name[fi]=Kirjaudu ulos
+Name[pt]=Terminar sessão
+Name[pt_BR]=Desligar
+Name[zh_CN]=注销
+Comment=Logout, shutdown or reboot
+Comment[de]=Abmelden, herunterfahren oder neu starten
+Comment[fi]=Kirjaudu ulos, sammuta tai käynnistä tietokone uudelleen
+Comment[pt]=Terminar sessão, desligar ou reiniciar
+Comment[pt_BR]=Desligar, reiniciar, sair da sessão etc.
+Comment[zh_CN]=注销、关机、或重新开机
+GenericName[zh_CN]=LDE 注销管理器
+Icon=gnome-logout
+Exec=loogout
+Categories=System
+

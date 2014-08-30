@@ -1,0 +1,15 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Looget
+Comment=Download File From the Internet
+Comment[zh_CN]=从互联网上下载文件
+GenericName=Download Tools
+GenericName[zh_CN]=下载工具
+X-GNOME-FullName=Loongson Download Tools
+Exec=looget
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=looget
+Categories=Network;
+StartupNotify=true
