@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE abiword PUBLIC "-//ABISOURCE//DTD AWML 1.0 Strict//EN" "http://www.abisource.com/awml.dtd">
+<abiword template="false" xmlns:ct="http://www.abisource.com/changetracking.dtd" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:math="http://www.w3.org/1998/Math/MathML" xid-max="357" xmlns:dc="http://purl.org/dc/elements/1.1/" styles="unlocked" fileformat="1.1" xmlns:svg="http://www.w3.org/2000/svg" xmlns:awml="http://www.abisource.com/awml.dtd" xmlns="http://www.abisource.com/awml.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.9.1" xml:space="preserve" props="dom-dir:ltr; document-footnote-restart-section:0; document-endnote-type:numeric; document-endnote-place-enddoc:1; document-endnote-initial:1; lang:zh-CN; document-endnote-restart-section:0; document-footnote-restart-page:0; document-footnote-type:numeric; document-footnote-initial:1; document-endnote-place-endsection:0">
+<!-- ======================================================================== -->
+<!-- This file is an AbiWord document.                                        -->
+<!-- AbiWord is a free, Open Source word processor.                           -->
+<!-- More information about AbiWord is available at http://www.abisource.com/ -->
+<!-- You should not edit this file by hand.                                   -->
+<!-- ======================================================================== -->
+
+<metadata>
+<m key="abiword.date_last_changed">Fri Aug 29 13:13:53 2014
+</m>
+<m key="abiword.generator">AbiWord</m>
+<m key="dc.creator">xuzhuoyi</m>
+<m key="dc.date">Wed Aug 27 13:22:18 2014
+</m>
+<m key="dc.format">application/x-abiword</m>
+</metadata>
+<rdf>
+</rdf>
+<history version="21" edit-time="9652" last-saved="1409289233" uid="c2de3b52-2da9-11e4-8799-9f9026e5fcc2">
+<version id="11" started="1409116938" uid="e4e03712-2db0-11e4-8799-9f9026e5fcc2" auto="0" top-xid="159"/>
+<version id="12" started="1409120972" uid="816e1930-2db3-11e4-9196-988146433f6c" auto="0" top-xid="239"/>
+<version id="14" started="1409193223" uid="ffb1c440-2e5d-11e4-8cbf-ef9ab92c51a9" auto="0" top-xid="256"/>
+<version id="16" started="1409195967" uid="5fa66f50-2e62-11e4-9c43-99ab9ae4d2a1" auto="0" top-xid="279"/>
+<version id="21" started="1409285066" uid="44fee6a8-2f3b-11e4-97a5-f3201801570a" auto="0" top-xid="300"/>
+</history>
+<styles>
+<s type="P" name="Normal" followedby="Current Settings" props="font-family:Times New Roman; margin-top:0pt; font-style:normal; margin-left:0pt; bgcolor:transparent; widows:2; text-align:left; text-indent:0in; text-position:normal; margin-bottom:0pt; font-weight:normal; margin-right:0pt; font-size:12pt; font-variant:normal; text-decoration:none; line-height:1.0; color:000000; font-stretch:normal"/>
+</styles>
+<pagesize pagetype="A4" orientation="portrait" width="8.267717" height="11.692913" units="in" page-scale="1.000000"/>
+<section xid="158" props="page-margin-footer:0.5000in; page-margin-header:0.5000in; page-margin-right:1.0000in; page-margin-left:1.0000in; page-margin-top:1.0000in; page-margin-bottom:1.0000in">
+<p style="Normal" xid="159"><c props="font-size:12pt">﻿</c><c props="font-size:12pt"></c><c props="color:BF0000; font-size:12pt">LDE发布了0.0.</c><c props="color:BF0000; font-size:12pt">7</c><c props="color:BF0000; font-size:12pt">！！</c><c props="font-size:12pt"><br/>0.0.7：</c></p>
+<p style="Normal" xid="281"><c props="font-size:12pt"></c><c props="font-size:12pt">1、增加 LRun 软件快速启动器。<br/>2、修改 .desktop 配置文件，优化菜单显示。</c></p>
+<p style="Normal" xid="349"><c props="font-size:12pt"></c></p>
+<p style="Normal" xid="350"><c props="font-size:12pt">LDE 有一个依赖包在 Debian Testing 源中。在 /etc/apt/sources.list 中添加：</c></p>
+<p style="Normal" xid="351" props="text-align:left; dom-dir:ltr"><c>deb http://ftp.cn.debian.org/debian/ testing main</c></p>
+<p style="Normal" xid="352" props="text-align:left; dom-dir:ltr"><c props="font-size:12pt">再执行 apt-get update  即可使用 LDE 的 deb 包安装。如果在命令行下安装，安装后请执行 </c><c props="font-family:Times New Roman; font-size:12pt; color:000000; text-decoration:none; text-position:normal; font-weight:normal; font-style:normal; lang:zh-CN">apt-get -f install</c><c props="font-size:12pt"> 修复依赖。（推荐使用 GDebi 软件包安装程序来安装，可自动安装依赖）</c></p>
+<p style="Normal" xid="353" props="text-align:left; dom-dir:ltr"><c props="font-size:12pt"></c></p>
+<p style="Normal" xid="354" props="text-align:left; dom-dir:ltr"><c props="font-size:12pt">安装详细说明请看下文 “</c><c props="font-weight:bold; font-size:12pt">五、安装方法”</c><c props="font-size:12pt"><br/></c></p>
+<p style="Normal" xid="259" props="text-align:left; dom-dir:ltr"><c props="font-weight:bold">零、LDE介绍：</c><c props="font-weight:bold"></c></p>
+<p style="Normal" xid="260" props="text-align:left; dom-dir:ltr">LDE，全名为 Loongson Desktop Environment，可在龙芯等 mipsel 平台上执行。LDE 项目旨在向龙芯用户提供一个低硬件门槛的桌面环境，在轻量化的前提下，尽可能实现更强大的功能。LDE 以 Qt 作为图形界面库，有强大的移植性，在 mipsel 以外的平台也可编译运行。LDE 提供了一些配套的可独立运行元件。LDE 使用 Openbox 为其默认视窗管理器并且希望能够提供一个建立在可独立的套件上的轻巧而快速的桌面。<c></c></p>
+<p style="Normal" xid="261" props="text-align:left; dom-dir:ltr"><c props="font-size:12pt"></c><c></c></p>
+<p style="Normal" xid="262" props="text-align:left; dom-dir:ltr">LDE 元件<c></c></p>
+<p style="Normal" xid="263" props="text-align:left; dom-dir:ltr"><c props="font-size:12pt"></c><c></c></p>
+<p style="Normal" xid="264" props="text-align:left; dom-dir:ltr">    Looplorer, 是一个快速的网页浏览器，以 webkit 为内核，有可保存书签功能，提供用户书签文件用于修改。<c></c></p>
+<p style="Normal" xid="265" props="text-align:left; dom-dir:ltr">    LooFTP, FTP 客户端。<c></c></p>
+<p style="Normal" xid="266" props="text-align:left; dom-dir:ltr">    Razorqt-Panel, 桌面面板，移植于 Razorqt 项目（LXQT 项目的前身）。它可以从 *.desktop 档案自动制造出选单，也有 GUI 的偏好设定对话框（因此不需要手动修改设定档）。这个元件也提供拥有自动完成选单的“执行”对话框。<c></c></p>
+<p style="Normal" xid="267" props="text-align:left; dom-dir:ltr">    Initlde,会话管理器，当使用者启动会话时，建立桌面环境并自动启动程序的工具。<c></c></p>
+<p style="Normal" xid="268" props="text-align:left; dom-dir:ltr">    Looget, 可指定存储位置，带进度条的下载工具。<c></c></p>
+<p style="Normal" xid="269" props="text-align:left; dom-dir:ltr">    Obconf, 界面管理器，可以通过此软件简单的切换窗口风格、图标以及程序使用的字型。<c></c></p>
+<p style="Normal" xid="270" props="text-align:left; dom-dir:ltr">    Lootepad, 文字编辑器，基于 Qt 的文本编辑器。可快速启动，流畅操作。最新的版本支持恢复功能。<c></c></p>
+<p style="Normal" xid="271" props="text-align:left; dom-dir:ltr">    Loogout, 注销管理器。<c></c></p>
+<p style="Normal" xid="272" props="text-align:left; dom-dir:ltr">    Openbox, 窗口管理器。<c></c></p>
+<p style="Normal" xid="307" props="text-align:left; dom-dir:ltr">    LRun,程序快速启动器。</p>
+<p style="Normal" xid="308" props="text-align:left; dom-dir:ltr">    Ldeabout,内嵌于 LDE 软件中，显示 LDE 版本、作者等信息的模块。<c props="font-size:12pt"><br/><br/></c><c props="font-weight:bold; font-size:12pt">一、开发初衷和适用人群：</c></p>
+<p style="Normal" xid="162" props="text-align:left; dom-dir:ltr">在图形计算中，一个桌面环境（Desktop environment，有时称为桌面管理器）为计算机提供一个图形用户界面（GUI）。这个名称来自桌面比拟，对应于早期的文字命令行界面（CLI）。一个典型的桌面环境提供图标，视窗，工具栏，文件夹，壁纸以及像拖放这样的能力。整体而言，桌面环境在设计和功能上的特性，赋予了它与众不同的外观和感觉。<c></c><c props="font-size:12pt"><br/>这个桌面环境，主要是为龙芯开发。</c>﻿<c props="font-weight:bold">龙芯</c>（<a xlink:href="http://zh.wikipedia.org/wiki/英语" xid="163">英语</a>：<c props="font-weight:bold">Loongson</c>，旧称<c props="font-weight:bold">GODSON</c><a xlink:href="http://zh.wikipedia.org/wiki/龙芯#cite_note-1" xid="165"><c props="text-position:superscript">[1]</c></a>）是由<a xlink:href="http://zh.wikipedia.org/wiki/中国科学院计算技术研究所" xid="167">中国科学院计算技术研究所</a>所设计的通用<a xlink:href="http://zh.wikipedia.org/wiki/中央處理器" xid="169">中央处理器</a>，采用<a xlink:href="http://zh.wikipedia.org/wiki/MIPS指令集" xid="171">MIPS</a><a xlink:href="http://zh.wikipedia.org/wiki/精简指令集" xid="173">精简指令集</a>架构。因为它的 mipsel 架构，支持的软件比较少。而且现阶段龙芯的性能较弱，流行的 KDE、GNOME 桌面环境无法在龙芯上运行，<c props="font-size:12pt">于是就开始逐步开发和完善一个新的桌面环境。现在已经做到了以下部分：<br/>1，以 Openbox 为默认窗口管理器。可自行修改配置文件更换窗口管理器。<br/>2，整体风格接近 Lxde，由窗口管理器与面板组成。<br/>3，支持 Oconf 修改窗口风格、主题。<br/>4，支持所有 Openbox 的窗体操作。<br/>5，有独立的桌面环境引导和注销程序。<br/>6，整合 </c><c props="font-family:Times New Roman; font-size:12pt; color:000000; text-decoration:none; text-position:normal; font-weight:normal; font-style:normal; lang:zh-CN"> Looplorer, Lootepad, LooFTP, Looget</c><c props="font-size:12pt"> 等实用程序，可在终端中直接打程序名启动，也可在菜单中启动。<br/><br/>适用人群：<br/>1，使用 MIPSEL 架构的设备，建议 Loongson 2F 及以上（包括 2F/3A/3B 等）。<br/>2，</c><c props="font-family:Times New Roman; font-size:12pt; color:000000; text-decoration:none; text-position:normal; font-weight:normal; font-style:normal; lang:zh-CN">好奇心强，</c><c props="font-size:12pt">希望更换新桌面环境，体验新程序。<br/>3，对 Linux 有一定了解，懂得如何切换桌面环境。<br/>4，愿意报告 bug，为龙芯社区做贡献。</c></p>
+<p style="Normal" xid="283" props="text-align:left; dom-dir:ltr"><c props="font-size:12pt"></c></p>
+<p style="Normal" xid="284" props="text-align:left; dom-dir:ltr"><c props="font-weight:bold; font-size:12pt">二、版本变更记录</c></p>
+<p style="Normal" xid="285" props="text-align:left; dom-dir:ltr"><c props="font-size:12pt">0.0.6:</c></p>
+<p style="Normal" xid="302" props="text-align:left; dom-dir:ltr"><c props="font-size:12pt">1、出于稳定性的考虑，将面板更换为 razorqt-panel。</c></p>
+<p style="Normal" xid="303" props="text-align:left; dom-dir:ltr"><c props="font-size:12pt">2、向关键程序添加 ldeabout 关于模块。</c></p>
+<p style="Normal" xid="304" props="text-align:left; dom-dir:ltr"><c props="font-size:12pt"></c></p>
+<p style="Normal" xid="301" props="text-align:left; dom-dir:ltr"><c props="font-size:12pt"></c><c props="font-size:12pt">0.0.5:</c></p>
+<p style="Normal" xid="287" props="text-align:left; dom-dir:ltr"><c>1、优化依赖关系，去除非必需的依赖关系。</c></p>
+<p style="Normal" xid="291" props="text-align:left; dom-dir:ltr"><c>2、加入 Looplorer, Lootepad, LooFTP, Looget 等应用。</c></p>
+<p style="Normal" xid="292" props="text-align:left; dom-dir:ltr"><c>3、加入 Loogout 注销管理器。</c></p>
+<p style="Normal" xid="293" props="text-align:left; dom-dir:ltr"><c>4、加入 Initlde 桌面环境引导程序。</c></p>
+<p style="Normal" xid="294" props="text-align:left; dom-dir:ltr"><c>5、移植 Lxqt-panel 作为 LDE 的面板程序。</c></p>
+<p style="Normal" xid="305" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="286" props="font-family:Times New Roman; font-size:12pt; dom-dir:ltr; lang:zh-CN; text-align:left; text-position:normal; font-weight:normal; font-style:normal; text-decoration:none"><c props="font-size:12pt"></c><c props="font-size:12pt">0.0.5 之前为内部版本<br/><br/></c><c props="font-weight:bold; font-size:12pt">三</c><c props="font-weight:bold; font-size:12pt">、软件特色：</c><c props="font-size:12pt"><br/>(......待补充......)</c></p>
+<p style="Normal" xid="240" props="text-align:left; dom-dir:ltr"><c props="font-size:12pt"></c><c></c></p>
+<p style="Normal" xid="177" props="font-family:Times New Roman; font-size:12pt; dom-dir:ltr; color:000000; text-decoration:none; text-align:left; text-position:normal; font-weight:normal; font-style:normal"><c props="font-weight:bold; font-size:12pt">四</c><c props="font-weight:bold; font-size:12pt">、主界面展示：</c><c props="font-size:12pt"><br/><br/><br/></c><c props="font-weight:bold; font-size:12pt">五</c><c props="font-weight:bold; font-size:12pt">、安装方法：</c><c props="font-size:12pt"><br/>安装前请注意，LDE 的一个依赖只在 Debian Testing 源提供。安装前可临时调整到 Testing 源，安装好后可以调回 Stable 源，不会影响其他软件包的安装升级。</c></p>
+<p style="Normal" xid="310" props="font-family:Times New Roman; font-size:12pt; dom-dir:ltr; color:000000; text-decoration:none; text-align:left; text-position:normal; font-weight:normal; font-style:normal"><c props="font-size:12pt">如果知道如何换成 Testing 源，可以以自己的方法更换。这里使用命令行文本编辑器 nano 作为示范：</c></p>
+<p style="Normal" xid="311" props="font-family:Times New Roman; font-size:12pt; dom-dir:ltr; color:000000; text-decoration:none; text-align:left; text-position:normal; font-weight:normal; font-style:normal"><c props="font-size:12pt"> </c></p>
+<p style="Normal" xid="318" props="font-family:Times New Roman; text-decoration:none; dom-dir:ltr; color:000000; font-size:12pt; font-weight:normal; text-position:normal; text-align:left; font-style:normal"><c></c><c props="font-size:12pt">安装有两种方法，图形安装和命令行安装。建议使用图形安装。</c></p>
+<p style="Normal" xid="219" props="font-family:Times New Roman; font-size:12pt; dom-dir:ltr; color:000000; text-decoration:none; text-align:left; text-position:normal; font-weight:normal; font-style:normal"><c props="font-size:12pt">1.图形安装（推荐）：</c><c props="font-size:12pt"></c></p>
+<p style="Normal" xid="220" props="font-family:Times New Roman; font-size:12pt; dom-dir:ltr; color:000000; text-decoration:none; text-align:left; text-position:normal; font-weight:normal; font-style:normal"><c props="font-size:12pt">图形安装需要下载一个 GDebi 软件包安装程序。</c></p>
+<p style="Normal" xid="344" props="font-family:Times New Roman; text-decoration:none; dom-dir:ltr; color:000000; font-size:12pt; font-weight:normal; text-position:normal; text-align:left; font-style:normal"><c>1）输入 su 获得 root 权限。</c></p>
+<p style="Normal" xid="345" props="font-family:Times New Roman; font-size:12pt; dom-dir:ltr; color:000000; text-decoration:none; text-align:left; text-position:normal; font-weight:normal; font-style:normal"><c props="font-size:12pt">2）终端下执行 apt-get install gdebi 。</c></p>
+<p style="Normal" xid="346" props="font-family:Times New Roman; font-size:12pt; dom-dir:ltr; color:000000; text-decoration:none; text-align:left; text-position:normal; font-weight:normal; font-style:normal"><c props="font-size:12pt">开始更改源：</c></p>
+<p style="Normal" xid="338" props="font-family:Times New Roman; text-decoration:none; dom-dir:ltr; color:000000; font-size:12pt; font-weight:normal; text-position:normal; text-align:left; font-style:normal"><c>3）输入 nano  /etc/apt/sources.list</c></p>
+<p style="Normal" xid="340" props="font-family:Times New Roman; text-decoration:none; dom-dir:ltr; color:000000; font-size:12pt; font-weight:normal; text-position:normal; text-align:left; font-style:normal"><c>4）按下键使光标移到最后一行直接输入 deb http://ftp.cn.debian.org/debian/ testing main</c></p>
+<p style="Normal" xid="341" props="font-family:Times New Roman; font-size:12pt; dom-dir:ltr; text-position:normal; text-decoration:none; font-weight:normal; color:000000; text-align:left; font-style:normal"><c>5）按 Ctrl + X 退出，再按 Y 确认，最后按回车。</c></p>
+<p style="Normal" xid="342" props="font-family:Times New Roman; text-decoration:none; dom-dir:ltr; color:000000; font-size:12pt; font-weight:normal; text-position:normal; text-align:left; font-style:normal"><c>6）使用 apt-get update 更新软件包列表。</c></p>
+<p style="Normal" xid="343" props="font-family:Times New Roman; font-size:12pt; dom-dir:ltr; text-position:normal; text-decoration:none; font-weight:normal; color:000000; text-align:left; font-style:normal"><c props="font-style:italic; font-weight:bold">注意：换到 Testing 源期间，最好不要使用 apt-get dist-upgrade 命令升级。这样会更新到 Debian 8,Wi-Fi 将会失效。</c></p>
+<p style="Normal" xid="331" props="font-family:Times New Roman; font-size:12pt; dom-dir:ltr; color:000000; lang:zh-CN; text-align:left; text-position:normal; font-weight:normal; font-style:normal; text-decoration:none"><c props="font-size:12pt">7）打开图形界面的文件管理器，右键点击下载好的deb包，选择“GDebi 软件包安装程序”，再在弹出的窗口中点击“安装软件包”，输入密码后会自动安装。图形安装的优点是可以更方便地检查软件包依赖关系，并且自动满足依赖关系，清楚地查看不满足的的依赖包和错误信息。</c><c props="font-size:12pt"></c></p>
+<p style="Normal" xid="355" props="font-family:Times New Roman; font-size:12pt; dom-dir:ltr; color:000000; lang:zh-CN; text-align:left; text-position:normal; font-weight:normal; font-style:normal; text-decoration:none"><c props="font-size:12pt"></c></p>
+<p style="Normal" xid="221" props="font-family:Times New Roman; font-size:12pt; dom-dir:ltr; color:000000; text-decoration:none; text-align:left; text-position:normal; font-weight:normal; font-style:normal"><c props="font-size:12pt">2.命令行安装：</c><c props="font-size:12pt"></c></p>
+<p style="Normal" xid="347" props="font-family:Times New Roman; font-size:12pt; dom-dir:ltr; color:000000; text-decoration:none; text-align:left; text-position:normal; font-weight:normal; font-style:normal"><c props="font-size:12pt">修改源的操作与图形安装一样，可以参考图形安装3-6步。</c></p>
+<p style="Normal" xid="348" props="font-family:Times New Roman; font-size:12pt; dom-dir:ltr; color:000000; text-decoration:none; text-align:left; text-position:normal; font-weight:normal; font-style:normal"><c props="font-size:12pt">安装：</c></p>
+<p style="Normal" xid="71"><c props="font-weight:bold; font-size:12pt">代码:</c><c props="font-weight:bold; font-size:12pt"></c></p>
+<p style="Normal" xid="72" props="font-family:Times New Roman; font-size:12pt; dom-dir:ltr; lang:zh-CN; font-weight:normal; text-position:normal; text-align:left; font-style:normal; text-decoration:none"><c props="font-size:12pt">cd &lt;你的下载目录&gt;</c></p>
+<p style="Normal" xid="328" props="font-family:Times New Roman; font-size:12pt; dom-dir:ltr; lang:zh-CN; font-weight:normal; text-position:normal; text-align:left; font-style:normal; text-decoration:none"><c props="font-size:12pt">su<br/>dpkg -i </c><c>lde_0.0.7-1_mipsel.deb</c><c props="font-size:12pt"><br/>apt-get -f install</c><c props="font-size:12pt"></c></p>
+<p style="Normal" xid="241"><c props="font-size:12pt"></c><c></c></p>
+<p style="Normal" xid="356"><c props="font-style:italic; font-weight:bold">注意：完全安装完毕后可以删除新加的源。和刚才一样，使用 nano 打开 sources.list，在刚添加的那行最开头加#。Ctrl + X，Y，回车。保存并退出。</c></p>
+<p style="Normal" xid="357"><c props="font-style:italic; font-weight:bold"></c></p>
+<p style="Normal" xid="223"><c props="font-weight:bold; font-size:12pt">六</c><c props="font-weight:bold; font-size:12pt">、配置文件</c><c props="font-weight:bold; font-size:12pt"></c></p>
+<p style="Normal" xid="225"><c props="font-size:12pt">本版本的配置文件保存在程序内部，暂时不提供修改。在后续的版本中，将提供配置文件的修改功能和一个图形化的配置工具。现在，您也可以通过更改 Openbox 和 Lxqt-panel 的配置文件来更改窗口管理器和面板设置。</c><c props="font-size:12pt"></c></p>
+<p style="Normal" xid="226" props="text-align:left; dom-dir:ltr"><c props="font-size:12pt">Openbox 配置文件位置：</c><c props="font-size:12pt"></c>/home/xuzhuoyi/.config/openbox</p>
+<p style="Normal" xid="227" props="text-align:left; dom-dir:ltr"><c props="font-size:12pt">Lxqt-panel 配置文件位置：</c><c props="font-size:12pt"></c>/home/xuzhuoyi/.config/lxqt<c props="font-size:12pt"><br/><br/></c><c props="font-weight:bold; font-size:12pt">七</c><c props="font-weight:bold; font-size:12pt">、进入DE环境</c><c props="font-size:12pt"><br/>做完上面几步后，注销，在“登陆”界面，选“LDE”登陆，即可进入。<br/>第一次启动可能速度稍慢，一般第二次启动即可正常使用。<br/></c></p>
+<p style="Normal" xid="229" props="text-align:left; dom-dir:ltr">LDE 提供了专门开发的注销管理器 Loogout。点击菜单中的系统工具中的注销即可打开。由于新版 Debian 的权限限制，非管理员用户没有关机和重启权限。可注销后在登录界面关机。也可按 Ctrl + Alt + F1 进入 tty 命令行或使用虚拟终端，输入 su 后输入密码获取权限，再执行 reboot （重启）或 init 0 （关机）。<c></c><c props="font-size:12pt"><br/></c></p>
+<p style="Normal" xid="230" props="text-align:left; dom-dir:ltr"><c props="font-size:12pt; font-weight:bold; font-style:italic">注意：部分电脑在 LDE 下菜单中最低下的注销按钮有时会失效，请点击系统工具中的注销来使用 LDE 自带的注销程序 Loogout。<br/></c><c props="font-size:12pt"><br/></c><c props="font-weight:bold; font-size:12pt">八</c><c props="font-weight:bold; font-size:12pt">、使用方法</c><c props="font-size:12pt"><br/>(......待补充......)</c></p>
+<p style="Normal" xid="280" props="text-align:left; dom-dir:ltr"><c props="font-size:12pt"></c><c></c></p>
+<p style="Normal" xid="242" props="text-align:left; dom-dir:ltr"><c props="font-weight:bold; font-size:12pt">九</c><c props="font-weight:bold; font-size:12pt">，其他</c><c props="font-weight:bold; font-size:12pt"></c><c props="font-size:12pt"><br/>本DE可以直接在其他桌面环境中启动，支持同时重叠两个桌面环境。启动命令是：<br/>initlde<br/></c></p>
+<p style="Normal" xid="251" props="text-align:left; dom-dir:ltr"><c props="font-size:12pt">其他附带的程序也可以很好地单独运行，命令行或是菜单中的运行中输入：</c><c props="font-size:12pt"></c></p>
+<p style="Normal" xid="252" props="text-align:left; dom-dir:ltr"><c props="font-size:12pt">looplorer  轻量级网页浏览器</c><c props="font-size:12pt"></c></p>
+<p style="Normal" xid="253" props="text-align:left; dom-dir:ltr"><c props="font-size:12pt">lootepad   类似 gedit 的文本编辑器</c><c props="font-size:12pt"></c></p>
+<p style="Normal" xid="254" props="text-align:left; dom-dir:ltr"><c props="font-size:12pt">looftp       多信息 FTP 客户端</c><c props="font-size:12pt"></c></p>
+<p style="Normal" xid="256" props="text-align:left; dom-dir:ltr"><c props="font-size:12pt">looget      可指定存储位置的下载工具</c><c props="font-size:12pt"></c></p>
+<p style="Normal" xid="257" props="text-align:left; dom-dir:ltr"><c props="font-size:12pt">loogout    注销管理器</c><c props="font-size:12pt"></c></p>
+<p style="Normal" xid="255" props="text-align:left; dom-dir:ltr"><c props="font-size:12pt"></c><c></c></p>
+<p style="Normal" xid="156"><c props="font-size:12pt"></c><c></c></p>
+<p style="Normal" xid="157"><c></c></p>
+</section>
+</abiword>
