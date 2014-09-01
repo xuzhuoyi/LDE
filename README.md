@@ -45,5 +45,7 @@ LDE 使用 Git 作为版本控制系统. 我们所有的代码都可以在 Githu
 
     git clone https://github.com/xuzhuoyi/LDE/
 Git 的更多信息，参见官方网站: http://git-scm.com/
+### 撰写文档
+ldemanual.txt/ldemanual.abw 是两种格式的用户手册，你可以修改或添加里面的内容
 ### 报告 Bugs
 我们所有的问题都记录在 GitHub 上。
