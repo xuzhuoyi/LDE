@@ -12,16 +12,15 @@ LDE，全名为 Loongson Desktop Environment，可在龙芯等 mipsel 平台上�
 * Loogout 注销管理器。
 * LRun 程序快速启动器。
 * Ldeabout 内嵌于 LDE 软件中，显示 LDE 版本、作者等信息的模块。
+* Ldecc LDE 控制中心，控制硬件与软件的各项设置。
+* LooFM 文件管理器，有基本文件、文件夹操作功能。
 
 ### 已经测试支持的Linux系统/版本:
-* Debian testing
-* Debian stable
+* Linux Mint 16/17/17.1
+* Debian stable/testing/sid
 * Gentoo
-* OpenSuse 13
-* OpenSuse Factory
-* Ubuntu 14.04
-* Ubuntu 13.10
-* Ubuntu 12.04
+* OpenSuse 13.1/Factory
+* Ubuntu 13.10/14.04/14.10
 
 LDE 理论上支持所有 Linux 发行版
 
