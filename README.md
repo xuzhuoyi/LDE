@@ -32,7 +32,8 @@ LDE 理论上支持所有 Linux 发行版
 其他平台可自行测试。
 安装
 ---
-请用户直接到 ftp://ftp.loongsoner.com/LDE 下载安装包
+用户可以从 Github 的 Releases 中获取已编译完成的二进制安装包。
+同样也可以直接到 ftp://ftp.loongsoner.com/LDE 下载安装包
 
 同一目录下的 ldemanual.txt/ldemanual.abw 是两种格式的用户手册，里面有安装方法。
 共同开发
