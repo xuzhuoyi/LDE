@@ -1,12 +1,30 @@
 #include "widget.h"
 #include "ui_widget.h"
+#include "locationbar.h"
+#include <QMessageBox>
 
 Widget::Widget(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::Widget)
 {
     ui->setupUi(this);
-    pressReturn();
+    bar = new LocationBar(this);
+    QHBoxLayout *downLayout = new QHBoxLayout;
+    downLayout->addWidget(ui->pushButBkmrk);
+    downLayout->addWidget(ui->pushButton);
+    downLayout->addStretch();
+    //QWebView *webView = new QWebView;
+    QVBoxLayout *layout = new QVBoxLayout;
+    layout->addWidget(bar);
+    layout->addWidget(ui->webView);
+    layout->addLayout(downLayout);
+
+
+    this->setLayout(layout);
+
+
+
+
     refreshUrl();
     clickLink();
     ui->webView->page()->setLinkDelegationPolicy(QWebPage::DelegateAllLinks);
@@ -14,6 +32,15 @@ Widget::Widget(QWidget *parent) :
     createActions();		//创建浏览器按钮动作
     createMenuBar();
     ui->pushButBkmrk->setMenu(pFavorite);
+
+
+
+    QSettings a ("a.ini",QSettings::IniFormat);
+    a.beginGroup("a");
+    //a.setValue("a","a");
+    //a.setValue("b","b");
+    a.endGroup();
+
 }
 
 Widget::~Widget()
@@ -22,20 +49,12 @@ Widget::~Widget()
     delete ui;
 }
 
-void Widget::on_pushButGoto_clicked()
-{
-    loadUrl();
-}
 
-void Widget::pressReturn()
-{
-    connect(ui->lineEditAddr,SIGNAL(returnPressed()),this,SLOT(loadUrl()));
 
-}
 
 void Widget::loadUrl()
 {
-    QString str = ui->lineEditAddr->text();
+    QString str = bar->getLineEditText();
     if (str.size() > 3 && str[0] == 'w' && str[1] == 'w' && str[2] == 'w')
         {
             str = "http://" + str;
@@ -46,18 +65,12 @@ void Widget::loadUrl()
 
 void Widget::refreshUrl()
 {
-    connect(ui->webView,SIGNAL(loadProgress(int)),this,SLOT(refreshlineEditAddr()));
+    connect(ui->webView,SIGNAL(loadProgress(int)),bar,SLOT(refreshlineEditAddr()));
 }
 
-void Widget::refreshlineEditAddr()
-{
-    ui->lineEditAddr->setText(ui->webView->url().toString());
-}
 
-void Widget::on_pushButton_clicked()
-{
-    ui->webView->reload();
-}
+
+
 
 void Widget::clickLink()
 {
@@ -69,15 +82,12 @@ void Widget::loadLink(const QUrl &url)
     ui->webView->load(url);
 }
 
-void Widget::on_pushButBack_clicked()
-{
-    ui->webView->back();
-}
+
 
 void Widget::addFavorites()
 {
     int num = FavoritePage.size();
-    FavoritePage.insert(ui->webView->title(), ui->lineEditAddr->text());
+    FavoritePage.insert(ui->webView->title(), ui->webView->url().toString());
 
     /*
      * 添加后，收藏夹内网址个数没有增多时，即需要收藏的网页已经存在
@@ -93,6 +103,13 @@ void Widget::addFavorites()
 
     pFavoriteAction.push_back(pAction);
     pFavorite->addAction(pAction);
+    QMapIterator<QString , QString> iter(FavoritePage);
+        //输出所有元素
+        while(iter.hasNext())
+        {
+            iter.next();
+            qDebug() << iter.key() << " " <<iter.value();
+        }  ;
 }
 
 //打开收藏夹中的网页
@@ -106,7 +123,7 @@ void Widget::openFavorite()
     if (iterator != FavoritePage.constEnd())
     {
         ui->webView->load(QUrl(iterator.value()));
-        refreshlineEditAddr();
+        bar->refreshlineEditAddr();
         return;
     }
 }
@@ -139,6 +156,7 @@ void Widget::readData()
 //保存历史记录和收藏夹数据
 void Widget::saveData()
 {
+
     int i;
     QMap<QString, QString>::const_iterator iterator;
     QSettings settings("Record.ini", QSettings::IniFormat);
@@ -154,6 +172,8 @@ void Widget::saveData()
         i++;
     }
     settings.endGroup();
+
+
 }
 
 void Widget::createMenuBar()
@@ -189,8 +209,50 @@ void Widget::createActions()
 
 
 
-void Widget::on_pushButton_2_clicked()
+
+
+
+Widget* Widget::newWindow()
 {
-    QProcess *mainProcess = new QProcess;
-    mainProcess->start("/usr/bin/ldeabout",NULL);
+    //保存数据
+    //if (!m_mainWindows.isEmpty())
+        //mainWindow()->m_autoSaver->saveIfNeccessary();
+    Widget *browser = new Widget();
+    browser->show();
+    return browser;
 }
+
+void Widget::load()
+{
+    loadUrl();
+}
+
+void Widget::addMenu()
+{
+    ui->pushButBkmrk->setMenu(pFavorite);
+}
+
+
+
+
+void Widget::goBack()
+{
+    ui->webView->back();
+}
+
+void Widget::webReload()
+{
+    ui->webView->reload();
+}
+
+QString Widget::getWebkitAddress()
+{
+    return ui->webView->url().toString();
+}
+
+void Widget::on_pushButton_clicked()
+{
+    this->newWindow();
+}
+
+

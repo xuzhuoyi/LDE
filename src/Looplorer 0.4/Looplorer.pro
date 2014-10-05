@@ -15,11 +15,16 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        widget.cpp
+        widget.cpp \
+    locationbar.cpp
 
-HEADERS  += widget.h
+HEADERS  += widget.h \
+    locationbar.h
 
-FORMS    += widget.ui
+FORMS    += widget.ui \
+    locationbar.ui \
+    bookmarks/bookmarksdialog.ui \
+    bookmarks/addbookmarkdialog.ui
 
 RESOURCES += \
     rc.qrc
