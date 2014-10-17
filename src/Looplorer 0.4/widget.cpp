@@ -1,6 +1,7 @@
 #include "widget.h"
 #include "ui_widget.h"
 #include "locationbar.h"
+#include <QTextEdit>
 #include <QMessageBox>
 
 Widget::Widget(QWidget *parent) :
@@ -13,6 +14,9 @@ Widget::Widget(QWidget *parent) :
     downLayout->addWidget(ui->pushButBkmrk);
     downLayout->addWidget(ui->pushButton);
     downLayout->addStretch();
+    downLayout->addWidget(ui->buttonAbout);
+    downLayout->addWidget(ui->buttonDevTools);
+
     //QWebView *webView = new QWebView;
     QVBoxLayout *layout = new QVBoxLayout;
     layout->addWidget(bar);
@@ -40,6 +44,8 @@ Widget::Widget(QWidget *parent) :
     //a.setValue("a","a");
     //a.setValue("b","b");
     a.endGroup();
+
+    connect(ui->buttonDevTools,SIGNAL(clicked()),this,SLOT(viewSource()));
 
 }
 
@@ -199,7 +205,7 @@ void Widget::createActions()
     }
 
     //收藏按钮，快捷键为Ctrl+D， 处理函数为addFavorites()
-    pCollectAction = new QAction("Add to Favorites",this);
+    pCollectAction = new QAction("添加到书签",this);
     pCollectAction->setShortcut(tr("Ctrl+D"));
     connect(pCollectAction, SIGNAL(triggered()), this, SLOT(addFavorites()));
 }
@@ -255,4 +261,27 @@ void Widget::on_pushButton_clicked()
     this->newWindow();
 }
 
+void Widget::viewSource()
+{
+    QNetworkAccessManager* accessManager = ui->webView->page()->networkAccessManager();
+    QNetworkRequest request(ui->webView->url());
+    QNetworkReply* reply = accessManager->get(request);
+    connect(reply, SIGNAL(finished()), this, SLOT(slotSourceDownloaded()));
+}
 
+void Widget::slotSourceDownloaded()
+{
+    QNetworkReply* reply = qobject_cast<QNetworkReply*>(const_cast<QObject*>(sender()));
+    QTextEdit* textEdit = new QTextEdit(NULL);
+    textEdit->setAttribute(Qt::WA_DeleteOnClose);
+    textEdit->show();
+    textEdit->setPlainText(reply->readAll());
+    reply->deleteLater();
+}
+
+
+void Widget::on_buttonAbout_clicked()
+{
+    QMessageBox::information(NULL, "关于 Looplorer", "Looplorer 0.4.9", QMessageBox::Yes, QMessageBox::Yes);
+
+}

@@ -4,11 +4,12 @@
 #include <QWidget>
 #include <QMap>
 #include <QtGui/QMainWindow>
-#include <QtNetwork/QtNetwork>
+#include <QtNetwork>
 #include <QMenu>
 #include <QGridLayout>
 #include <QVBoxLayout>
 #include <QHBoxLayout>
+#include <QtWebKit>
 
 // #include "locationbar.h"
 
@@ -58,6 +59,13 @@ private slots:
     void addFavorites();	//收藏当前页面
     void openFavorite();
     void on_pushButton_clicked();
+
+    void on_buttonAbout_clicked();
+
+protected slots:
+    void viewSource();
+    void slotSourceDownloaded();
+
 };
 
 #endif // WIDGET_H

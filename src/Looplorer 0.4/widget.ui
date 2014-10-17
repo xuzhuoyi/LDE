@@ -23,7 +23,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Looplorer 0.4.8</string>
+   <string>Looplorer 0.4.9</string>
   </property>
   <widget class="QWebView" name="webView">
    <property name="geometry">
@@ -70,6 +70,32 @@
    </property>
    <property name="text">
     <string>新窗口</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonDevTools">
+   <property name="geometry">
+    <rect>
+     <x>835</x>
+     <y>492</y>
+     <width>85</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>开发者工具</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonAbout">
+   <property name="geometry">
+    <rect>
+     <x>746</x>
+     <y>492</y>
+     <width>85</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>关于</string>
    </property>
   </widget>
  </widget>
