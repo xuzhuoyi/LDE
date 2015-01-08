@@ -43,7 +43,6 @@
 
 #include <QToolButton>
 
-//! [0]
 class Button : public QToolButton
 {
     Q_OBJECT
@@ -53,6 +52,5 @@ public:
 
     QSize sizeHint() const Q_DECL_OVERRIDE;
 };
-//! [0]
 
 #endif
