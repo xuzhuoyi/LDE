@@ -39,6 +39,7 @@
 ****************************************************************************/
 
 #include <QtWidgets>
+#include <QMessageBox>
 
 #include <math.h>
 
@@ -56,6 +57,8 @@ Calculator::Calculator(QWidget *parent)
 //! [0]
 
 //! [1]
+    Button *menuButton = createButton(tr("LCalc"), SLOT(popMenu()));
+
     display = new QLineEdit("0");
 //! [1] //! [2]
     display->setReadOnly(true);
@@ -99,7 +102,9 @@ Calculator::Calculator(QWidget *parent)
     QGridLayout *mainLayout = new QGridLayout;
 //! [5] //! [6]
     mainLayout->setSizeConstraint(QLayout::SetFixedSize);
-    mainLayout->addWidget(display, 0, 0, 1, 6);
+    mainLayout->addWidget(menuButton, 0, 0, 1, 1);
+    mainLayout->addWidget(display, 0, 1, 1, 5);
+
     mainLayout->addWidget(backspaceButton, 1, 0, 1, 2);
     mainLayout->addWidget(clearButton, 1, 2, 1, 2);
     mainLayout->addWidget(clearAllButton, 1, 4, 1, 2);
@@ -394,3 +399,8 @@ bool Calculator::calculate(double rightOperand, const QString &pendingOperator)
     return true;
 }
 //! [38]
+
+void Calculator::popMenu()
+{
+    QMessageBox::information(NULL, "LCalc", "LCalc V0.9");
+}

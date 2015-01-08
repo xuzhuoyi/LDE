@@ -42,6 +42,7 @@
 #define CALCULATOR_H
 
 #include <QWidget>
+#include <QMenu>
 
 QT_BEGIN_NAMESPACE
 class QLineEdit;
@@ -71,6 +72,7 @@ private slots:
     void readMemory();
     void setMemory();
     void addToMemory();
+    void popMenu();
 //! [0]
 
 //! [1]
