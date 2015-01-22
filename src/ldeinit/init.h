@@ -27,7 +27,7 @@ private:
     bool isFirstLogin();
     //static void runAutorun();
     void startInit();
-    //void initUser();
+    void initUser();
 
 public:
     Init();

@@ -19,6 +19,7 @@
 
 #include "init.h"
 #include <QProcess>
+#include <QSettings>
 
 //引导模式表
 //mode 0   注销
@@ -78,9 +79,21 @@ void Init::runAutorun()
 //根据有无配置文件判断是否首次登录
 bool Init::isFirstLogin()
 {
-  //if (isExist(lde.ini))  
-  return false;
-  //else return true
+    if (!QFile::exists("~/.LDE/lderc.ini"))
+        return true;
+    else
+        return false;
+}
+
+void Init::initUser()
+{
+    QSettings settings("~/.LDE/lderc.ini",QSettings::IniFormat);
+    settings.setValue("autoStart/appNum", 0);
+    settings.setValue("theme/qt-theme","clearlooks");
+    settings.setValue("theme/gnome-theme","default");
+    settings.setValue("theme/openbox-theme","lde-default");
+    settings.setValue("font/fontConfigPreset","lde-default");
+    settings.sync();
 }
 
 //判断是否升级
