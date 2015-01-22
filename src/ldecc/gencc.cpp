@@ -23,3 +23,8 @@ void Gencc::on_pushButton_2_clicked()
     emit back();
     this->close();
 }
+
+void Gencc::on_pushButton_3_clicked()
+{
+
+}

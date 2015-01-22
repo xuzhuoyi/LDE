@@ -15,15 +15,18 @@ TEMPLATE = app
 SOURCES += main.cpp\
         ldecc.cpp \
     gencc.cpp \
-    lancc.cpp
+    lancc.cpp \
+    safcc.cpp
 
 HEADERS  += ldecc.h \
     gencc.h \
-    lancc.h
+    lancc.h \
+    safcc.h
 
 FORMS    += ldecc.ui \
     gencc.ui \
-    lancc.ui
+    lancc.ui \
+    safcc.ui
 
 RESOURCES += \
     ldeccrc.qrc

@@ -38,10 +38,10 @@ void Init::startInit()
     case 1 :
         runAutorun();
 	
-    //case 2 :
+    case 2 :
 	
-        //initUser();
-        //runAutorun();
+        initUser();
+        runAutorun();
 	
     //case 3 :
 	

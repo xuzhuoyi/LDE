@@ -23,7 +23,7 @@
     </rect>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>3</number>
    </property>
    <widget class="QWidget" name="tab">
     <attribute name="title">
@@ -34,7 +34,7 @@
       <rect>
        <x>10</x>
        <y>10</y>
-       <width>141</width>
+       <width>351</width>
        <height>16</height>
       </rect>
      </property>
@@ -47,12 +47,12 @@
       <rect>
        <x>10</x>
        <y>30</y>
-       <width>151</width>
+       <width>351</width>
        <height>16</height>
       </rect>
      </property>
      <property name="text">
-      <string>版权所有：2014 LDE Team</string>
+      <string>Copyright 2014-2015 LDE Team</string>
      </property>
     </widget>
     <widget class="Line" name="line">
@@ -73,12 +73,12 @@
       <rect>
        <x>10</x>
        <y>70</y>
-       <width>211</width>
+       <width>351</width>
        <height>16</height>
       </rect>
      </property>
      <property name="text">
-      <string>下载网站：http://www.loongsoner.com</string>
+      <string>网站：http://xuzhuoyi.github.io</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_5">
@@ -86,12 +86,12 @@
       <rect>
        <x>10</x>
        <y>90</y>
-       <width>221</width>
+       <width>351</width>
        <height>16</height>
       </rect>
      </property>
      <property name="text">
-      <string>FTP 站点：ftp://ftp.loongsoner.com/LDE</string>
+      <string>发布页面：http://github.com/xuzhuoyi/LDE/releases</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_6">
@@ -130,7 +130,7 @@
       <rect>
        <x>10</x>
        <y>70</y>
-       <width>221</width>
+       <width>361</width>
        <height>16</height>
       </rect>
      </property>
@@ -179,7 +179,7 @@
       <rect>
        <x>10</x>
        <y>10</y>
-       <width>261</width>
+       <width>351</width>
        <height>16</height>
       </rect>
      </property>
@@ -212,12 +212,12 @@
     <rect>
      <x>20</x>
      <y>20</y>
-     <width>50</width>
+     <width>191</width>
      <height>31</height>
     </rect>
    </property>
    <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;LDE&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;L Desktop Environment&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_12">
@@ -230,7 +230,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>版本：0.0.7</string>
+    <string>v1.9.0</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_2">

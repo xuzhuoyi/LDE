@@ -4,6 +4,7 @@
 #include <QWidget>
 #include "gencc.h"
 #include "lancc.h"
+#include "safcc.h"
 
 namespace Ui {
 class ldecc;
@@ -26,10 +27,15 @@ private slots:
 
     void on_toolButton_10_clicked();
 
+    void on_toolButton_9_clicked();
+
+    void on_toolButton_3_clicked();
+
 private:
     Ui::ldecc *ui;
     Gencc g;
     Lancc l;
+    Safcc s;
 };
 
 #endif // LDECC_H
