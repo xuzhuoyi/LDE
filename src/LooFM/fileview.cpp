@@ -31,6 +31,29 @@ fileview::fileview(QWidget *parent) :
     popMenu->addSeparator();
     popMenu->addAction(delAction);
 
+    QMenu *pControlMenu = new QMenu;
+
+    QMenu *pViewModeMenu = pControlMenu->addMenu(tr("View Mode"));
+    pViewModeMenu->addAction(tr("Icon"));
+    pViewModeMenu->addAction(tr("Detail"));
+
+    pControlMenu->addAction(tr("Refresh"));
+
+    QMenu *pPanelMenu = pControlMenu->addMenu(tr("Panel"));
+    pPanelMenu->addAction(tr("Location"));
+    pPanelMenu->addAction(tr("Information"));
+
+    QMenu *pGotoMenu = pControlMenu->addMenu(tr("Goto"));
+    pGotoMenu->addAction(tr("Back"));
+    pGotoMenu->addAction(tr("Forward"));
+
+    QMenu *pHelpMenu = pControlMenu->addMenu(tr("Help"));
+    pHelpMenu->addAction(tr("About LooFM"));
+    pHelpMenu->addAction(tr("About LDE"));
+
+    pControlMenu->addAction(tr("Exit"));
+
+    ui->controlButton->setMenu(pControlMenu);
 
     listModel = new QFileSystemModel(this);
     listModel->setFilter(QDir::AllEntries | QDir::NoDotAndDotDot);
