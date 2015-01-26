@@ -2,8 +2,9 @@
 #define WIDGET_H
 
 #include <QWidget>
-#include <QtNetwork/QFtp>
+#include "qftp.h"
 #include <QtGui>
+#include <QTreeWidgetItem>
 
 namespace Ui {
 class Widget;

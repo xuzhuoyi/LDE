@@ -200,6 +200,117 @@
     </widget>
    </item>
   </layout>
+  <action name="backAction">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/images/buttons/images/left-24.png</normaloff>:/images/buttons/images/left-24.png</iconset>
+   </property>
+   <property name="text">
+    <string>后退</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+Left</string>
+   </property>
+  </action>
+  <action name="forwardAction">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/images/buttons/images/right-24.png</normaloff>:/images/buttons/images/right-24.png</iconset>
+   </property>
+   <property name="text">
+    <string>前进</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+Right</string>
+   </property>
+  </action>
+  <action name="upAction">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/images/buttons/images/up-24.png</normaloff>:/images/buttons/images/up-24.png</iconset>
+   </property>
+   <property name="text">
+    <string>上层目录</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+Up</string>
+   </property>
+  </action>
+  <action name="iconAction">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/images/buttons/images/viewlist-24.png</normaloff>:/images/buttons/images/viewlist-24.png</iconset>
+   </property>
+   <property name="text">
+    <string>图标视图</string>
+   </property>
+  </action>
+  <action name="detailAction">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/images/buttons/images/viewdetailed-24.png</normaloff>:/images/buttons/images/viewdetailed-24.png</iconset>
+   </property>
+   <property name="text">
+    <string>细节视图</string>
+   </property>
+  </action>
+  <action name="refreshAction">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/images/buttons/images/117.png</normaloff>:/images/buttons/images/117.png</iconset>
+   </property>
+   <property name="text">
+    <string>重新装入</string>
+   </property>
+   <property name="shortcut">
+    <string>F5</string>
+   </property>
+  </action>
+  <action name="locationAction">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/images/buttons/images/122.png</normaloff>:/images/buttons/images/122.png</iconset>
+   </property>
+   <property name="text">
+    <string>位置</string>
+   </property>
+  </action>
+  <action name="infoAction">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/images/buttons/images/90.png</normaloff>:/images/buttons/images/90.png</iconset>
+   </property>
+   <property name="text">
+    <string>信息</string>
+   </property>
+  </action>
+  <action name="action_LooFM">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/images/buttons/images/66.png</normaloff>:/images/buttons/images/66.png</iconset>
+   </property>
+   <property name="text">
+    <string>关于 LooFM</string>
+   </property>
+  </action>
+  <action name="action_LDE">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/images/buttons/images/82.png</normaloff>:/images/buttons/images/82.png</iconset>
+   </property>
+   <property name="text">
+    <string>关于 LDE</string>
+   </property>
+  </action>
+  <action name="exitAction">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/images/buttons/images/115.png</normaloff>:/images/buttons/images/115.png</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>

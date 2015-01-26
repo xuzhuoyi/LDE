@@ -62,6 +62,15 @@ public:
     void removeFirstHistory(QModelIndexList &modellist,int &listposi);
     void removeLastHistory(QModelIndexList &modellist,int &listposi);
 
+private slots:
+    void on_backAction_triggered();
+    void on_forwardAction_triggered();
+    void on_upAction_triggered();
+    void on_iconAction_triggered();
+    void on_detailAction_triggered();
+    void on_refreshAction_triggered();
+    void on_action_LDE_triggered();
+    void on_exitAction_triggered();
 };
 
 #endif // FILEVIEW_H

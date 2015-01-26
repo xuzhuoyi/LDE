@@ -1,0 +1,7 @@
+#ifndef QT_QTFTP_MODULE_H
+#define QT_QTFTP_MODULE_H
+#include <QtFtp/QtFtpDepends>
+#include "qftp.h"
+#include "qurlinfo.h"
+#include "qtftpversion.h"
+#endif

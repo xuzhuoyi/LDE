@@ -1,6 +1,7 @@
 #include <QDirModel>
 #include <QDebug>
 #include <QMimeData>
+#include <QProcess>
 
 #include "fileview.h"
 #include "ui_fileview.h"
@@ -33,25 +34,31 @@ fileview::fileview(QWidget *parent) :
 
     QMenu *pControlMenu = new QMenu;
 
-    QMenu *pViewModeMenu = pControlMenu->addMenu(tr("View Mode"));
-    pViewModeMenu->addAction(tr("Icon"));
-    pViewModeMenu->addAction(tr("Detail"));
+    QMenu *pViewModeMenu = pControlMenu->addMenu(tr("视图模式"));
+    pViewModeMenu->addAction(ui->iconAction);
+    pViewModeMenu->addAction(ui->detailAction);
 
-    pControlMenu->addAction(tr("Refresh"));
+    pControlMenu->addSeparator();
 
-    QMenu *pPanelMenu = pControlMenu->addMenu(tr("Panel"));
-    pPanelMenu->addAction(tr("Location"));
-    pPanelMenu->addAction(tr("Information"));
+    pControlMenu->addAction(ui->refreshAction);
 
-    QMenu *pGotoMenu = pControlMenu->addMenu(tr("Goto"));
-    pGotoMenu->addAction(tr("Back"));
-    pGotoMenu->addAction(tr("Forward"));
+    pControlMenu->addSeparator();
 
-    QMenu *pHelpMenu = pControlMenu->addMenu(tr("Help"));
-    pHelpMenu->addAction(tr("About LooFM"));
-    pHelpMenu->addAction(tr("About LDE"));
+    QMenu *pPanelMenu = pControlMenu->addMenu(tr("面板"));
+    pPanelMenu->addAction(ui->locationAction);
+    pPanelMenu->addAction(ui->infoAction);
 
-    pControlMenu->addAction(tr("Exit"));
+    QMenu *pGotoMenu = pControlMenu->addMenu(tr("转到"));
+    pGotoMenu->addAction(ui->backAction);
+    pGotoMenu->addAction(ui->forwardAction);
+
+    QMenu *pHelpMenu = pControlMenu->addMenu(tr("关于"));
+    pHelpMenu->addAction(ui->action_LooFM);
+    pHelpMenu->addAction(ui->action_LDE);
+
+    pControlMenu->addSeparator();
+
+    pControlMenu->addAction(ui->exitAction);
 
     ui->controlButton->setMenu(pControlMenu);
 
@@ -400,4 +407,45 @@ void fileview::triggeropenAction()
 void fileview::changeModel()
 {
 
+}
+
+void fileview::on_backAction_triggered()
+{
+    backClick();
+}
+
+void fileview::on_forwardAction_triggered()
+{
+    forwardClick();
+}
+
+void fileview::on_upAction_triggered()
+{
+    aheadClick();
+}
+
+void fileview::on_iconAction_triggered()
+{
+    listClick();
+}
+
+void fileview::on_detailAction_triggered()
+{
+    detailClick();
+}
+
+void fileview::on_refreshAction_triggered()
+{
+    //ui->listView->setModel(listModel);
+}
+
+void fileview::on_action_LDE_triggered()
+{
+    QProcess *mainProcess = new QProcess;
+    mainProcess->start("/usr/bin/ldeabout",NULL);
+}
+
+void fileview::on_exitAction_triggered()
+{
+    exit(0);
 }

@@ -8,6 +8,12 @@
         <file>images/viewdetailed-24.png</file>
         <file>images/viewlist-24.png</file>
         <file>images/110.png</file>
+        <file>images/82.png</file>
+        <file>images/66.png</file>
+        <file>images/117.png</file>
+        <file>images/122.png</file>
+        <file>images/90.png</file>
+        <file>images/115.png</file>
     </qresource>
     <qresource prefix="/images/menu">
         <file alias="menu">images/runtonewscript.png</file>
