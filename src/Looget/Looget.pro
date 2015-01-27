@@ -21,3 +21,7 @@ SOURCES += main.cpp\
 HEADERS  += widget.h
 
 FORMS    += widget.ui
+
+# install
+target.path = /usr/bin
+INSTALLS += target

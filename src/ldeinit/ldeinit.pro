@@ -22,3 +22,7 @@ SOURCES += main.cpp \
 
 HEADERS += \
     init.h
+
+# install
+target.path = /usr/bin
+INSTALLS += target

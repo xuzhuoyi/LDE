@@ -32,3 +32,8 @@ FORMS    += ldecc.ui \
 
 RESOURCES += \
     ldeccrc.qrc
+
+# install
+target.path = /usr/bin
+INSTALLS += target
+

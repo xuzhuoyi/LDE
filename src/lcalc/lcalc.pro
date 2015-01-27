@@ -9,5 +9,6 @@ SOURCES       = button.cpp \
 DESTDIR += ../../usr/bin
 
 # install
-# target.path = $$[QT_INSTALL_EXAMPLES]/widgets/widgets/calculator
-# INSTALLS += target
+target.path = /usr/bin
+INSTALLS += target
+

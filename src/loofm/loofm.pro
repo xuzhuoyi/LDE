@@ -19,3 +19,8 @@ FORMS += fileview.ui
 RESOURCES += resource.qrc
 
 TRANSLATIONS +=filemanager_zh.ts
+
+# install
+target.path = /usr/bin
+INSTALLS += target
+

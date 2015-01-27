@@ -19,3 +19,8 @@ SOURCES += main.cpp mainwindow.cpp
 
 RESOURCES += \
     rc.qrc
+
+# install
+target.path = /usr/bin
+INSTALLS += target
+
