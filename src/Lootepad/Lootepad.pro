@@ -5,6 +5,9 @@
 QT += widgets
 
 TEMPLATE = app
+
+DESTDIR += ../../usr/bin
+
 TARGET = lootepad
 DEPENDPATH += .
 INCLUDEPATH += .

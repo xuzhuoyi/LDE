@@ -8,6 +8,8 @@ QT       += core
 
 QT       -= gui
 
+DESTDIR += ../../usr/bin
+
 TARGET = ldeinit
 CONFIG   += console
 CONFIG   -= app_bundle
