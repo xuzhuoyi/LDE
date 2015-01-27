@@ -45,6 +45,8 @@ QT_BEGIN_NAMESPACE
 class QLineEdit;
 QT_END_NAMESPACE
 
+extern int windowNum;
+
 //! [1]
 class MainWindow : public QMainWindow
 {
@@ -52,8 +54,8 @@ class MainWindow : public QMainWindow
 
 public:
     MainWindow(const QUrl& url);
+    ~MainWindow();
 	void clickLink();
-	
 
 protected slots:
 
@@ -62,6 +64,9 @@ protected slots:
     void adjustTitle();
     void setProgress(int p);
     void finishLoading(bool);
+
+    void newWindow();
+    void closeWindow();
 
     void viewSource();
     void slotSourceDownloaded();

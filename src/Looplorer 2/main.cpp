@@ -42,6 +42,8 @@
 #include <qtranslator.h>
 #include "mainwindow.h"
 
+extern int windowNum;
+
 static void showHelp(QCommandLineParser &parser, const QString errorMessage = QString())
 {
     QString text;
@@ -82,7 +84,9 @@ int main(int argc, char * argv[])
         return -1;
     }
 
+    windowNum = 0;
     MainWindow browser(url);
     browser.show();
+
     return app.exec();
 }

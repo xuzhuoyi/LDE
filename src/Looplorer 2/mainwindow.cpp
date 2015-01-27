@@ -43,6 +43,8 @@
 #include <QtWebKitWidgets>
 #include "mainwindow.h"
 
+int windowNum;
+
 //! [1]
 
 MainWindow::MainWindow(const QUrl& url)
@@ -78,16 +80,30 @@ MainWindow::MainWindow(const QUrl& url)
     toolBar->addAction(view->pageAction(QWebPage::Stop));
     toolBar->addWidget(locationEdit);
 //! [2]
+    QMenu *fileMenu = menuBar()->addMenu(tr("&File"));
+    QAction *newWindowAction = new QAction(tr("New Window"),this);
+    connect(newWindowAction, SIGNAL(triggered()),SLOT(newWindow()));
+    fileMenu->addAction(newWindowAction);
+    QAction *closeWindowAction = new QAction(tr("Close Window"),this);
+    connect(closeWindowAction, SIGNAL(triggered()),SLOT(closeWindow()));
+    fileMenu->addAction(closeWindowAction);
 
     QMenu *viewMenu = menuBar()->addMenu(tr("&View"));
     QAction* viewSourceAction = new QAction(tr("Page Source"), this);
     connect(viewSourceAction, SIGNAL(triggered()), SLOT(viewSource()));
+    viewMenu->addAction(view->pageAction(QWebPage::Stop));
+    viewMenu->addAction(view->pageAction(QWebPage::Reload));
+    viewMenu->addSeparator();
     viewMenu->addAction(viewSourceAction);
 
 //! [3]
+
+    QMenu *historyMenu = menuBar()->addMenu(tr("&History"));
+    historyMenu->addAction(view->pageAction(QWebPage::Back));
+    historyMenu->addAction(view->pageAction(QWebPage::Forward));
+
     QMenu *effectMenu = menuBar()->addMenu(tr("&Effect"));
     effectMenu->addAction(tr("Highlight all links"), this, SLOT(highlightAllLinks()));
-
     rotateAction = new QAction(this);
     rotateAction->setIcon(style()->standardIcon(QStyle::SP_FileDialogDetailedView));
     rotateAction->setCheckable(true);
@@ -109,8 +125,16 @@ MainWindow::MainWindow(const QUrl& url)
 
 	view->page()->setLinkDelegationPolicy(QWebPage::DelegateAllLinks);
 	clickLink();
+
+    windowNum++;
+
 }
 //! [3]
+
+MainWindow::~MainWindow()
+{
+    windowNum--;
+}
 
 void MainWindow::viewSource()
 {
@@ -226,7 +250,7 @@ void MainWindow::removeEmbeddedElements()
 
 void MainWindow::aboutLooplorer()
 {
-	QMessageBox::information(this,tr("About Looplorer"),tr("Looplorer 1.9.1"));
+    QMessageBox::information(this,tr("About Looplorer"),tr("Looplorer 1.9.2"));
 }
 
 void MainWindow::clickLink()
@@ -237,6 +261,21 @@ void MainWindow::clickLink()
 void MainWindow::loadLink(const QUrl &url)
 {
 	view->load(url);
+}
+
+void MainWindow::newWindow()
+{
+    QUrl newUrl;
+    newUrl = QUrl("http://www.baidu.com");
+
+    MainWindow *newBrowser = new MainWindow(newUrl);
+    newBrowser->setAttribute(Qt::WA_DeleteOnClose);
+    newBrowser->show();
+}
+
+void MainWindow::closeWindow()
+{
+    this->close();
 }
 
 
