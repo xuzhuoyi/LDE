@@ -1,0 +1,15 @@
+{
+    "name": "com.ubuntu.developer.username.filemanager",
+    "description": "description of filemanager",
+    "framework": "ubuntu-sdk-14.04-qml",
+    "architecture": "all",
+    "title": "filemanager",
+    "hooks": {
+        "filemanager": {
+            "apparmor": "filemanager.json",
+            "desktop": "filemanager.desktop"
+        }
+    },
+    "version": "0.1",
+    "maintainer": ""
+}

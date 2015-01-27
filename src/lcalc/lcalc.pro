@@ -7,5 +7,5 @@ SOURCES       = button.cpp \
                 main.cpp
 
 # install
-target.path = $$[QT_INSTALL_EXAMPLES]/widgets/widgets/calculator
-INSTALLS += target
+# target.path = $$[QT_INSTALL_EXAMPLES]/widgets/widgets/calculator
+# INSTALLS += target
