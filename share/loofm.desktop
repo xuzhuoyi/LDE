@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=LooFM
+GenericName[zh_CN]=文件管理器
+Comment=Access and organize files
+Keywords=folder;manager;explore;disk;filesystem;
+Exec=loofm
+Icon=system-file-manager
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=LDE;Qt;Utility;Core;FileManager;
+Actions=Window;

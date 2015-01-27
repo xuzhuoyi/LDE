@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=lcalc
+GenericName[zh_CN]=计算器
+Comment=Perform simple and scientific calculations
+Exec=lcalc
+Icon=galculator
+Terminal=false
+Type=Application
+Categories=Utility;
+StartupNotify=true
+Name[zh_CN]=lcalc
