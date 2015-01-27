@@ -1,4 +1,7 @@
 #include <QtGui>
+#include <QMessageBox>
+#include <QFileDialog>
+#include <QPushButton>
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
