@@ -20,6 +20,7 @@
 #include "init.h"
 #include <QProcess>
 #include <QSettings>
+#include <QFile>
 
 //引导模式表
 //mode 0   注销
