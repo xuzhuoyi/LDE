@@ -1,5 +1,5 @@
 TEMPLATE = subdirs
 
-SUBDIRS = ldeinit ldeabout loogout qtftp lrun ldecc lcalc loofm LooFTP Looget looplorer Lootepad
+SUBDIRS = ldeinit ldeabout loogout lrun ldecc lcalc loofm Looget looplorer Lootepad
 
 CONFIG += ordered
