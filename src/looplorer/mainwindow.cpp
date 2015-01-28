@@ -3,7 +3,7 @@
 ** Copyright (C) 2013 Digia Plc and/or its subsidiary(-ies).
 ** Contact: http://www.qt-project.org/legal
 **
-** This file is part of the examples of the Qt Toolkit.
+** This file is part of the Qt Toolkit.
 **
 ** $QT_BEGIN_LICENSE:BSD$
 ** You may use this file under the terms of the BSD license as follows:
@@ -73,23 +73,23 @@ MainWindow::MainWindow(const QUrl& url)
     locationEdit->setSizePolicy(QSizePolicy::Expanding, locationEdit->sizePolicy().verticalPolicy());
     connect(locationEdit, SIGNAL(returnPressed()), SLOT(changeLocation()));
 
-    QToolBar *toolBar = addToolBar(tr("Navigation"));
+    QToolBar *toolBar = addToolBar(tr("导航"));
     toolBar->addAction(view->pageAction(QWebPage::Back));
     toolBar->addAction(view->pageAction(QWebPage::Forward));
     toolBar->addAction(view->pageAction(QWebPage::Reload));
     toolBar->addAction(view->pageAction(QWebPage::Stop));
     toolBar->addWidget(locationEdit);
 //! [2]
-    QMenu *fileMenu = menuBar()->addMenu(tr("&File"));
-    QAction *newWindowAction = new QAction(tr("New Window"),this);
+    QMenu *fileMenu = menuBar()->addMenu(tr("文件(&F)"));
+    QAction *newWindowAction = new QAction(tr("新建窗口"),this);
     connect(newWindowAction, SIGNAL(triggered()),SLOT(newWindow()));
     fileMenu->addAction(newWindowAction);
-    QAction *closeWindowAction = new QAction(tr("Close Window"),this);
+    QAction *closeWindowAction = new QAction(tr("关闭窗口"),this);
     connect(closeWindowAction, SIGNAL(triggered()),SLOT(closeWindow()));
     fileMenu->addAction(closeWindowAction);
 
-    QMenu *viewMenu = menuBar()->addMenu(tr("&View"));
-    QAction* viewSourceAction = new QAction(tr("Page Source"), this);
+    QMenu *viewMenu = menuBar()->addMenu(tr("查看(&V)"));
+    QAction* viewSourceAction = new QAction(tr("页面源代码"), this);
     connect(viewSourceAction, SIGNAL(triggered()), SLOT(viewSource()));
     viewMenu->addAction(view->pageAction(QWebPage::Stop));
     viewMenu->addAction(view->pageAction(QWebPage::Reload));
@@ -98,27 +98,27 @@ MainWindow::MainWindow(const QUrl& url)
 
 //! [3]
 
-    QMenu *historyMenu = menuBar()->addMenu(tr("&History"));
+    QMenu *historyMenu = menuBar()->addMenu(tr("历史(&H)"));
     historyMenu->addAction(view->pageAction(QWebPage::Back));
     historyMenu->addAction(view->pageAction(QWebPage::Forward));
 
-    QMenu *effectMenu = menuBar()->addMenu(tr("&Effect"));
-    effectMenu->addAction(tr("Highlight all links"), this, SLOT(highlightAllLinks()));
+    QMenu *effectMenu = menuBar()->addMenu(tr("效果(&E)"));
+    effectMenu->addAction(tr("高亮所有链接"), this, SLOT(highlightAllLinks()));
     rotateAction = new QAction(this);
     rotateAction->setIcon(style()->standardIcon(QStyle::SP_FileDialogDetailedView));
     rotateAction->setCheckable(true);
-    rotateAction->setText(tr("Turn images upside down"));
+    rotateAction->setText(tr("倒转图像"));
     connect(rotateAction, SIGNAL(toggled(bool)), this, SLOT(rotateImages(bool)));
     effectMenu->addAction(rotateAction);
 
-    QMenu *toolsMenu = menuBar()->addMenu(tr("&Tools"));
-    toolsMenu->addAction(tr("Remove GIF images"), this, SLOT(removeGifImages()));
-    toolsMenu->addAction(tr("Remove all inline frames"), this, SLOT(removeInlineFrames()));
-    toolsMenu->addAction(tr("Remove all object elements"), this, SLOT(removeObjectElements()));
-    toolsMenu->addAction(tr("Remove all embedded elements"), this, SLOT(removeEmbeddedElements()));
+    QMenu *toolsMenu = menuBar()->addMenu(tr("工具(&T)"));
+    toolsMenu->addAction(tr("移除 GIF 动画"), this, SLOT(removeGifImages()));
+    toolsMenu->addAction(tr("移除所有内联框架"), this, SLOT(removeInlineFrames()));
+    toolsMenu->addAction(tr("移除所有对象元素"), this, SLOT(removeObjectElements()));
+    toolsMenu->addAction(tr("移除所有嵌入元素"), this, SLOT(removeEmbeddedElements()));
 
-	QMenu *helpMenu = menuBar()->addMenu(tr("&Help"));
-	helpMenu->addAction(tr("About Looplorer"), this, SLOT(aboutLooplorer()));
+	QMenu *helpMenu = menuBar()->addMenu(tr("帮助(&H)"));
+	helpMenu->addAction(tr("关于 Looplorer"), this, SLOT(aboutLooplorer()));
 
 	setCentralWidget(view);
     setUnifiedTitleAndToolBarOnMac(true);
