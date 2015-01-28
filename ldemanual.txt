@@ -1,4 +1,4 @@
-﻿LDE 用户手册（2014-8-29 更新）
+﻿LDE 用户手册（2015-1-28 更新）
 
 本用户手册是自由传播的，类似Wiki，每个使用者和开发者
 都可以修改、补充其内容。修改后请在文本最后增加作者信息，
@@ -6,12 +6,15 @@
 
 
 
-0.0.7：
+1.9.1：
 
-1、增加 LRun 软件快速启动器。
+1、增加 LCalc 计算器。
 
-2、修改 .desktop 配置文件，优化菜单显示。
+2、修改 InitLDE 增加配置文件管理功能。
 
+
+
+Debian 7 用户请注意：
 
 
 LDE 有一个依赖包在 Debian Testing 源中。
@@ -31,24 +34,32 @@ deb http://ftp.cn.debian.org/debian/ testing main
 
 
 
+当然，更好的方法是从源码编译安装
+
+这里是编译说明：https://github.com/xuzhuoyi/LDE/wiki
+
 零、LDE介绍：
 
 
-LDE，全名为 Loongson Desktop Environment，
-可在龙芯等 mipsel 平台上执行。
-LDE 项目旨在向龙芯用户提供一个低硬件门槛的桌面环境，
+LDE，全名为 L Desktop Environment，
+可在 i386/amd64/mipsel(龙芯)/armv5/armv7 等平台上执行。
+最近，LDE正在准备向 iOS/Android 移动平台进行移植。
+LDE 项目旨在向用户提供一个低硬件门槛的桌面环境，
 在轻量化的前提下，尽可能实现更强大的功能。
-LDE 以 Qt 作为图形界面库，有强大的移植性，
+LDE 以 Qt 5 作为图形界面库，有强大的移植性，
 在 mipsel 以外的平台也可编译运行。
 LDE 提供了一些配套的可独立运行元件。
-LDE 使用 Openbox 为其默认视窗管理器
-并且希望能够提供一个建立在可独立的套件上的轻巧而快速的桌面
-
+LDE 使用 Openbox 为其默认视窗管理器，
+并且希望能够提供一个建立在可独立的套件上。
 
 
 LDE 元件
 
 
+
+LCalc，计算器
+
+LooFM，文件管理器
     
 Looplorer, 是一个快速的网页浏览器，以 webkit 为内核，
 有可保存书签功能，提供用户书签文件用于修改。
@@ -104,7 +115,7 @@ Ldeabout,内嵌于 LDE 软件中，显示 LDE 版本、
 桌面环境在设计和功能上的特性，
 赋予了它与众不同的外观和感觉。
 这个桌面环境，
-主要是为龙芯开发。﻿龙芯（英语：Loongson，旧称GODSON[1]）
+可以在龙芯上使用。﻿龙芯（英语：Loongson，旧称GODSON[1]）
 是由中国科学院计算技术研究所所设计的通用中央处理器，
 采用MIPS精简指令集架构。因为它的 mipsel 架构，
 支持的软件比较少。而且现阶段龙芯的性能较弱，
@@ -149,10 +160,51 @@ Ldeabout,内嵌于 LDE 软件中，显示 LDE 版本、
 
 4，愿意报告 bug，为龙芯社区做贡献。
 
+关于报告 bug 及帮助开发，可以前往项目主页：
+
+https://github.com/xuzhuoyi/LDE
+
+这是一个 git 仓库，你也可以使用
+
+git clone https://github.com/xuzhuoyi/LDE
+
+将源代码下载到本地，编译说明请见 LDE Wiki
+
+https://github.com/xuzhuoyi/LDE/wiki
+
+
 
 
 二、版本变更记录
 
+
+由于之后版本变化过于频繁，这里只列出 0.9 以前版本变更记录
+
+详细版本记录可以去：
+
+https://github.com/xuzhuoyi/LDE/commits/master 查看
+
+0.9.0：
+
+1、增加 LooFM 文件管理器。
+
+2、重写 Looplorer UI，WebView 与应用分离，增加稳定性。
+
+0.5.0：
+
+1、修改 InitLDE 源文件，修复部分电脑的启动错误。
+
+0.1.0:
+
+1、对 amd64 平台进行优化。
+
+0.0.7：
+
+
+1、增加 LRun 软件快速启动器。
+
+
+2、修改 .desktop 配置文件，优化菜单显示。
 
 0.0.6:
 
@@ -202,7 +254,7 @@ Ldeabout,内嵌于 LDE 软件中，显示 LDE 版本、
 五、安装方法：
 
 
-安装前请注意，LDE 的一个依赖只在 Debian Testing 源提供。
+Debian 用户安装前请注意，LDE 的一个依赖只在 Debian Testing 源提供。
 安装前可临时调整到 Testing 源，安装好后可以调回 Stable 源
 ，不会影响其他软件包的安装升级。
 如果知道如何换成
