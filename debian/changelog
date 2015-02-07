@@ -1,0 +1,5 @@
+lde (1.9.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Genfa Xu <genfa@unknown>  Sat, 07 Feb 2015 22:42:15 +0800
