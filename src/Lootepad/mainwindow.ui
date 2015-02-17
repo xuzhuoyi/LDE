@@ -18,11 +18,7 @@
     <normaloff>:/new/prefix1/res/18.png</normaloff>:/new/prefix1/res/18.png</iconset>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0">
-     <widget class="QTextEdit" name="textEdit"/>
-    </item>
-   </layout>
+   <layout class="QGridLayout" name="gridLayout"/>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
@@ -30,7 +26,7 @@
      <x>0</x>
      <y>0</y>
      <width>565</width>
-     <height>24</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_F">
@@ -43,6 +39,10 @@
     <addaction name="separator"/>
     <addaction name="action_Save"/>
     <addaction name="action_SaveAs"/>
+    <addaction name="separator"/>
+    <addaction name="actionNewWindow"/>
+    <addaction name="actionCloseWindow"/>
+    <addaction name="actionNewTab"/>
     <addaction name="separator"/>
     <addaction name="action_Quit"/>
    </widget>
@@ -94,7 +94,7 @@
   </widget>
   <action name="action_New">
    <property name="icon">
-    <iconset resource="rc.qrc">
+    <iconset theme="document-new" resource="rc.qrc">
      <normaloff>:/new/prefix1/res/10.png</normaloff>:/new/prefix1/res/10.png</iconset>
    </property>
    <property name="text">
@@ -252,6 +252,33 @@
    </property>
    <property name="text">
     <string>关于 LDE</string>
+   </property>
+  </action>
+  <action name="actionNewWindow">
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/new/prefix1/res/6.png</normaloff>:/new/prefix1/res/6.png</iconset>
+   </property>
+   <property name="text">
+    <string>新窗口</string>
+   </property>
+  </action>
+  <action name="actionCloseWindow">
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/new/prefix1/res/36.png</normaloff>:/new/prefix1/res/36.png</iconset>
+   </property>
+   <property name="text">
+    <string>关闭窗口</string>
+   </property>
+  </action>
+  <action name="actionNewTab">
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/new/prefix1/res/28.png</normaloff>:/new/prefix1/res/28.png</iconset>
+   </property>
+   <property name="text">
+    <string>新标签页</string>
    </property>
   </action>
  </widget>

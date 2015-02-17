@@ -13,9 +13,13 @@ DEPENDPATH += .
 INCLUDEPATH += .
 
 # Input
-HEADERS += mainwindow.h
+HEADERS += mainwindow.h \
+    textedittab.h \
+    texteditor.h
 FORMS += mainwindow.ui
-SOURCES += main.cpp mainwindow.cpp
+SOURCES += main.cpp mainwindow.cpp \
+    textedittab.cpp \
+    texteditor.cpp
 
 RESOURCES += \
     rc.qrc
@@ -23,4 +27,6 @@ RESOURCES += \
 # install
 target.path = /usr/bin
 INSTALLS += target
+
+CONFIG += c++11
 

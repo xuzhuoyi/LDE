@@ -4,6 +4,10 @@
 #include <QMainWindow>
 #include <QLineEdit>
 #include <QLabel>
+#include <QTabWidget>
+
+
+class TextEditTab;
 
 namespace Ui {
 class MainWindow;
@@ -17,7 +21,12 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+signals:
+    void updateText(QString text);
+
 private slots:
+    void on_second_statusLabel_updateText(QString text);
+
     void on_action_New_triggered();
 
     void on_action_Save_triggered();
@@ -44,28 +53,27 @@ private slots:
 
     void on_action_Find_triggered();
 
-    void do_cursorChanged();
+void do_cursorChanged();
 
     void on_action_triggered();
 
     void on_action_LDE_triggered();
+
+    void on_actionNewTab_triggered();
+
+public slots:
+
 
 private:
     Ui::MainWindow *ui;
     bool isSaved;
     QString curFile;
     QString formTitle;
-    void do_file_New();
-    void do_file_SaveOrNot();
-    void do_file_Save();
-    void do_file_SaveAs();
-    bool saveFile(const QString& fileName);
-    void do_file_Open();
-    bool do_file_Load(const QString& fileName);
     QLineEdit *find_textLineEdit;
     QLabel* first_statusLabel;
     QLabel* second_statusLabel;
     void init_statusBar();
+    TextEditTab *textEditTab;
 };
 
 #endif // MAINWINDOW_H
