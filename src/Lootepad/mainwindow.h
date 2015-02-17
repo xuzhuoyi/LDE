@@ -53,7 +53,7 @@ private slots:
 
     void on_action_Find_triggered();
 
-void do_cursorChanged();
+    void do_cursorChanged();
 
     void on_action_triggered();
 

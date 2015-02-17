@@ -15,16 +15,15 @@ class TextEditTab : public QTabWidget
 public:
     explicit TextEditTab(MainWindow *parent = 0);
     ~TextEditTab();
-
     TextEditor *currentTEditor;
-
-
+    QList<TextEditor*> *textEditorList;
 
 signals:
     void addEditTab();
 
 private slots:
     void on_TextEditTab_addEditTab();
+    void onCurrentChanged(int index);
 
 
 };

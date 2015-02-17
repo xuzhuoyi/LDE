@@ -10,9 +10,11 @@ TextEditTab::TextEditTab(MainWindow *parent):
 {
     auto par = parent;
     connect(this, SIGNAL(addEditTab()), this, SLOT(on_TextEditTab_addEditTab()));
+    textEditorList = new QList<TextEditor*>;
     TextEditor *textLine = new TextEditor(par);
     this->addTab(textLine, "untitled");
     currentTEditor = textLine;
+    textEditorList->append(textLine);
 }
 
 TextEditTab::~TextEditTab()
@@ -22,8 +24,14 @@ TextEditTab::~TextEditTab()
 
 void TextEditTab::on_TextEditTab_addEditTab()
 {
-    QTextEdit *tEdit = new QTextEdit;
+    TextEditor *tEdit = new TextEditor;
     this->addTab(tEdit, "untitle");
+    textEditorList->append(tEdit);
+}
+
+void TextEditTab::onCurrentChanged(int index)
+{
+    currentTEditor = textEditorList->at(index);
 }
 
 
