@@ -1,3 +1,9 @@
+lde (1.9.3-1) utopic; urgency=low
+
+  * Add note in changelog (Closes: #51)
+
+ -- Zhuoyi Xu (LDE Team) <xzy476386434@vip.qq.com>  Mon, 23 Feb 2015 1:32:05 +0800
+
 lde (1.9.1-1) utopic; urgency=low
 
   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
