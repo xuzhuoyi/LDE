@@ -40,12 +40,12 @@ void Init::startInit()
     {
     case 1 :
         runDesktop();
-	
+	break;
     case 2 :
 	
         initUser();
         runDesktop();
-	
+	break;
     //case 3 :
 	
     //...
@@ -73,7 +73,7 @@ void Init::runDesktop()
     //...
   
     QProcess *mainProcess = new QProcess;
-    mainProcess->start("openbox",NULL);
+    mainProcess->start(“usr/bin/openbox",NULL);
     QProcess *mainProcess2 = new QProcess;
     mainProcess2->start("/usr/bin/razor-panel",NULL);
     QProcess *wallpaperCon = new QProcess;
