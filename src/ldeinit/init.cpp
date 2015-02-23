@@ -80,7 +80,7 @@ void Init::runAutorun()
 //根据有无配置文件判断是否首次登录
 bool Init::isFirstLogin()
 {
-    if (!QFile::exists("~/.LDE/lderc.ini"))
+    if (!QFile::exists(".LDE/lderc.ini"))
         return true;
     else
         return false;
@@ -88,7 +88,7 @@ bool Init::isFirstLogin()
 
 void Init::initUser()
 {
-    QSettings settings("~/.LDE/lderc.ini",QSettings::IniFormat);
+    QSettings settings(".LDE/lderc.ini",QSettings::IniFormat);
     settings.setValue("autoStart/appNum", 0);
     settings.setValue("theme/qt-theme","clearlooks");
     settings.setValue("theme/gnome-theme","default");
