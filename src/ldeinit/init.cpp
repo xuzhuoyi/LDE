@@ -96,7 +96,7 @@ bool Init::isFirstLogin()
 void Init::initUser()
 {
     QSettings settings(".LDE/lderc.ini",QSettings::IniFormat);
-    settings.setValue("wallPapers/source", "/usr/share/wallpapers/lde-default.png”);
+    settings.setValue("wallPapers/source", "/usr/share/wallpapers/lde-default.png");
     settings.setValue("autoStart/appNum", 0);
     settings.setValue("theme/qt-theme","clearlooks");
     settings.setValue("theme/gnome-theme","default");
