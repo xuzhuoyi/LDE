@@ -1,4 +1,4 @@
-lde (1.9.3-2) utopic; urgency=medium
+lde (1.9.3-3) utopic; urgency=medium
 
   * Fix rc exists judgement (Closes: #53)
 
