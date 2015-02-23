@@ -31,7 +31,7 @@ private:
 
 public:
     Init();
-    void runAutorun();
+    void runDesktop();
     int initMode;
 };
 

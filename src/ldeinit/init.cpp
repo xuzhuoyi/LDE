@@ -21,6 +21,7 @@
 #include <QProcess>
 #include <QSettings>
 #include <QFile>
+#include <QStringList>
 
 //引导模式表
 //mode 0   注销
@@ -38,12 +39,12 @@ void Init::startInit()
     switch (initMode)
     {
     case 1 :
-        runAutorun();
+        runDesktop();
 	
     case 2 :
 	
         initUser();
-        runAutorun();
+        runDesktop();
 	
     //case 3 :
 	
@@ -63,7 +64,7 @@ Init::Init()
     startInit();
 }
 
-void Init::runAutorun()
+void Init::runDesktop()
 {
   
     //QSetting autorun = new autorun
@@ -75,6 +76,12 @@ void Init::runAutorun()
     mainProcess->start("openbox",NULL);
     QProcess *mainProcess2 = new QProcess;
     mainProcess2->start("/usr/bin/razor-panel",NULL);
+    QProcess *wallpaperCon = new QProcess;
+    QStringList runArgsList;
+    QSettings settings(".LDE/lderc.ini",QSettings::IniFormat);
+    QString wpSource = settings.value("wallPapers/source");
+    runArgsList << "--bg-scale" << wpSource;
+    wallpaperCon->start("feh", runArgsList);
 }
 
 //根据有无配置文件判断是否首次登录
@@ -89,6 +96,7 @@ bool Init::isFirstLogin()
 void Init::initUser()
 {
     QSettings settings(".LDE/lderc.ini",QSettings::IniFormat);
+    settings.setValue("wallPapers/source", "/usr/share/wallpapers/lde-default.jpg");
     settings.setValue("autoStart/appNum", 0);
     settings.setValue("theme/qt-theme","clearlooks");
     settings.setValue("theme/gnome-theme","default");
