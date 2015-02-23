@@ -40,17 +40,17 @@ void Init::startInit()
     {
     case 1 :
         runDesktop();
-	break;
+        break;
     case 2 :
-	
+
         initUser();
         runDesktop();
-	break;
+        break;
     //case 3 :
-	
+
     //...
     //case 4 :
-     
+
      //   ...
     }
 }
@@ -66,20 +66,20 @@ Init::Init()
 
 void Init::runDesktop()
 {
-  
+
     //QSetting autorun = new autorun
     //利用 QSetting 类存储 autorun.ini 存储配置文件
     //
     //...
-  
+
     QProcess *mainProcess = new QProcess;
-    mainProcess->start(“usr/bin/openbox",NULL);
+    mainProcess->start("/usr/bin/openbox",NULL);
     QProcess *mainProcess2 = new QProcess;
     mainProcess2->start("/usr/bin/razor-panel",NULL);
     QProcess *wallpaperCon = new QProcess;
     QStringList runArgsList;
     QSettings settings(".LDE/lderc.ini",QSettings::IniFormat);
-    QString wpSource = settings.value("wallPapers/source");
+    QString wpSource = settings.value("wallPapers/source").toString();
     runArgsList << "--bg-scale" << wpSource;
     wallpaperCon->start("feh", runArgsList);
 }
@@ -96,7 +96,7 @@ bool Init::isFirstLogin()
 void Init::initUser()
 {
     QSettings settings(".LDE/lderc.ini",QSettings::IniFormat);
-    settings.setValue("wallPapers/source", "/usr/share/wallpapers/lde-default.jpg");
+    settings.setValue("wallPapers/source", "/usr/share/wallpapers/lde-default.png”);
     settings.setValue("autoStart/appNum", 0);
     settings.setValue("theme/qt-theme","clearlooks");
     settings.setValue("theme/gnome-theme","default");
@@ -111,4 +111,3 @@ void Init::initUser()
 
 
 //}
-
