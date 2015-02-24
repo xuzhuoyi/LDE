@@ -1,3 +1,9 @@
+lde (1.9.4-1) utopic; urgency=low
+
+  * Add Wallpaper in Makefile (Closes: #61)
+
+ -- Zhuoyi Xu (LDE Team) <xzy476386434@vip.qq.com>  Tue, 24 Feb 2015 15:50:11 +0800
+
 lde (1.9.3-3) utopic; urgency=medium
 
   * Fix rc exists judgement (Closes: #53)
