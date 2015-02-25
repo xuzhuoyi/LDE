@@ -18,17 +18,20 @@ SOURCES += main.cpp\
         ldecc.cpp \
     gencc.cpp \
     lancc.cpp \
-    safcc.cpp
+    safcc.cpp \
+    descc.cpp
 
 HEADERS  += ldecc.h \
     gencc.h \
     lancc.h \
-    safcc.h
+    safcc.h \
+    descc.h
 
 FORMS    += ldecc.ui \
     gencc.ui \
     lancc.ui \
-    safcc.ui
+    safcc.ui \
+    descc.ui
 
 RESOURCES += \
     ldeccrc.qrc

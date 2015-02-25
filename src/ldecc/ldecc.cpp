@@ -7,9 +7,10 @@ ldecc::ldecc(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    connect(&g,SIGNAL(back()),this,SLOT(show()));
-    connect(&l,SIGNAL(back()),this,SLOT(show()));
-    connect(&s,SIGNAL(back()),this,SLOT(show()));
+    connect(&g, SIGNAL(back()), this, SLOT(show()));
+    connect(&l, SIGNAL(back()), this, SLOT(show()));
+    connect(&s, SIGNAL(back()), this, SLOT(show()));
+    connect(&d, SIGNAL(back()), this, SLOT(show()));
 }
 
 ldecc::~ldecc()
@@ -48,5 +49,11 @@ void ldecc::on_toolButton_9_clicked()
 void ldecc::on_toolButton_3_clicked()
 {
     s.show();
+    this->hide();
+}
+
+void ldecc::on_toolButton_11_clicked()
+{
+    d.show();
     this->hide();
 }

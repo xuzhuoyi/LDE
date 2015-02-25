@@ -80,7 +80,7 @@
    <widget class="QToolButton" name="toolButton_2">
     <property name="geometry">
      <rect>
-      <x>100</x>
+      <x>190</x>
       <y>20</y>
       <width>81</width>
       <height>51</height>
@@ -94,6 +94,12 @@
      <iconset resource="ldeccrc.qrc">
       <normaloff>:/new/prefix1/image/2013112721311083.png</normaloff>:/new/prefix1/image/2013112721311083.png</iconset>
     </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
     <property name="toolButtonStyle">
      <enum>Qt::ToolButtonTextBesideIcon</enum>
     </property>
@@ -101,7 +107,7 @@
    <widget class="QToolButton" name="toolButton_3">
     <property name="geometry">
      <rect>
-      <x>190</x>
+      <x>280</x>
       <y>20</y>
       <width>81</width>
       <height>51</height>
@@ -114,6 +120,12 @@
     <property name="icon">
      <iconset resource="ldeccrc.qrc">
       <normaloff>:/new/prefix1/image/2013112721311004.png</normaloff>:/new/prefix1/image/2013112721311004.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
     </property>
     <property name="toolButtonStyle">
      <enum>Qt::ToolButtonTextBesideIcon</enum>
@@ -134,6 +146,39 @@
     <property name="icon">
      <iconset resource="ldeccrc.qrc">
       <normaloff>:/new/prefix1/image/2013112721311049.png</normaloff>:/new/prefix1/image/2013112721311049.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="toolButtonStyle">
+     <enum>Qt::ToolButtonTextBesideIcon</enum>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_11">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>20</y>
+      <width>81</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>  桌面
+与墙纸</string>
+    </property>
+    <property name="icon">
+     <iconset resource="ldeccrc.qrc">
+      <normaloff>:/new/prefix1/image/2013112721311003.png</normaloff>:/new/prefix1/image/2013112721311003.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
     </property>
     <property name="toolButtonStyle">
      <enum>Qt::ToolButtonTextBesideIcon</enum>
@@ -168,6 +213,12 @@
      <iconset resource="ldeccrc.qrc">
       <normaloff>:/new/prefix1/image/2013112721311082.png</normaloff>:/new/prefix1/image/2013112721311082.png</iconset>
     </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
     <property name="toolButtonStyle">
      <enum>Qt::ToolButtonTextBesideIcon</enum>
     </property>
@@ -187,6 +238,12 @@
     <property name="icon">
      <iconset resource="ldeccrc.qrc">
       <normaloff>:/new/prefix1/image/2013112721311077.png</normaloff>:/new/prefix1/image/2013112721311077.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
     </property>
     <property name="toolButtonStyle">
      <enum>Qt::ToolButtonTextBesideIcon</enum>
@@ -220,6 +277,12 @@
     <property name="icon">
      <iconset resource="ldeccrc.qrc">
       <normaloff>:/new/prefix1/image/2013112721311034.png</normaloff>:/new/prefix1/image/2013112721311034.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
     </property>
     <property name="toolButtonStyle">
      <enum>Qt::ToolButtonTextBesideIcon</enum>
@@ -255,6 +318,12 @@
      <iconset resource="ldeccrc.qrc">
       <normaloff>:/new/prefix1/image/2013112721311092.png</normaloff>:/new/prefix1/image/2013112721311092.png</iconset>
     </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
     <property name="toolButtonStyle">
      <enum>Qt::ToolButtonTextBesideIcon</enum>
     </property>
@@ -275,6 +344,12 @@
     <property name="icon">
      <iconset resource="ldeccrc.qrc">
       <normaloff>:/new/prefix1/image/2013112721311081.png</normaloff>:/new/prefix1/image/2013112721311081.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
     </property>
     <property name="toolButtonStyle">
      <enum>Qt::ToolButtonTextBesideIcon</enum>
@@ -297,6 +372,12 @@ L D E</string>
      <iconset resource="ldeccrc.qrc">
       <normaloff>:/new/prefix1/image/2013112721311043.png</normaloff>:/new/prefix1/image/2013112721311043.png</iconset>
     </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
     <property name="toolButtonStyle">
      <enum>Qt::ToolButtonTextBesideIcon</enum>
     </property>
@@ -317,6 +398,12 @@ L D E</string>
     <property name="icon">
      <iconset resource="ldeccrc.qrc">
       <normaloff>:/new/prefix1/image/2013112721311031.png</normaloff>:/new/prefix1/image/2013112721311031.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
     </property>
     <property name="toolButtonStyle">
      <enum>Qt::ToolButtonTextBesideIcon</enum>

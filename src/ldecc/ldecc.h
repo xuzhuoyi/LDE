@@ -5,6 +5,7 @@
 #include "gencc.h"
 #include "lancc.h"
 #include "safcc.h"
+#include "descc.h"
 
 namespace Ui {
 class ldecc;
@@ -31,11 +32,14 @@ private slots:
 
     void on_toolButton_3_clicked();
 
+    void on_toolButton_11_clicked();
+
 private:
     Ui::ldecc *ui;
     Gencc g;
     Lancc l;
     Safcc s;
+    Descc d;
 };
 
 #endif // LDECC_H
