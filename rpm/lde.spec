@@ -1,5 +1,5 @@
 Name:           lde
-Version:        2.0.0 
+Version:        2.0.1 
 Release:        1%{?dist}
 Summary:        Complete LDE Desktop Environment for end users
 
@@ -31,11 +31,13 @@ install -d %{buildroot}/usr/share/
 install -d %{buildroot}/usr/share/applications/
 install -d %{buildroot}/usr/share/xsessions/
 install -d %{buildroot}/usr/share/wallpapers/
+install -d %{buildroot}/usr/share/apps/kdm/sessions/
 install usr/bin/* %{buildroot}/usr/bin/
 install share/*.desktop %{buildroot}/usr/share/applications/
 install shell/startlde %{buildroot}/usr/bin/
 install xsessions/LDE.desktop %{buildroot}/usr/share/xsessions/
 install wallpapers/lde-default.png %{buildroot}/usr/share/wallpapers/
+install xsessions/LDE.desktop %{buildroot}/usr/share/apps/kdm/sessions/
 
 
 %files
@@ -44,9 +46,13 @@ install wallpapers/lde-default.png %{buildroot}/usr/share/wallpapers/
 %{_datadir}/applications/*
 %{_datadir}/xsessions/*
 %{_datadir}/wallpapers/*
+%{_datadir}/apps/kdm/sessions/*
 
 
 
 %changelog
+* Thu Feb 26 2015 Zhuoyi Xu (LDE Team) <xzy476386434@vip.qq.com> - 2.0.1
+- Remove file conflict with LXDE (#68)
+
 * Thu Feb 26 2015 Zhuoyi Xu (LDE Team) <xzy476386434@vip.qq.com> - 2.0.0
 - Change Ldeabout UI (#64)
