@@ -1,0 +1,22 @@
+[Desktop Entry]
+Categories=Application;System;Settings
+Comment=LDE Desktop Environment Control Center
+Encoding=UTF-8
+Exec=/usr/bin/ldecc
+Icon=preferences-system
+Name=LDE Control Center
+StartupNotify=false
+Terminal=false
+Type=Application
+X-MultipleArgs=false
+
+
+
+# Translations
+
+
+# Translations
+Comment[zh_CN]=LDE 桌面环境控制中心
+Name[zh_CN]=LDE 控制中心
+Comment[zh_TW]=LDE 桌面環境的系統控制中心
+Name[zh_TW]=LDE 控制中心
