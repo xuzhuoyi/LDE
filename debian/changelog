@@ -1,3 +1,9 @@
+lde (2.0.0) utopic; urgency=medium
+
+  * Change Ldeabout UI (Closes: #64)
+
+ -- Zhuoyi Xu (LDE Team) <xzy476386434@vip.qq.com>  Thu, 26 Feb 2015 14:11:11 +0800
+
 lde (1.9.4-1) utopic; urgency=low
 
   * Add Wallpaper in Makefile (Closes: #61)
