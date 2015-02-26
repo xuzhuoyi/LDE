@@ -1,3 +1,9 @@
+lde (2.0.1) utopic; urgency=low
+
+  * Remove file conflict with LXDE (Closes: #68)
+
+ -- Zhuoyi Xu (LDE Team) <xzy476386434@vip.qq.com>  Thu, 26 Feb 2015 19:36:19 +0800
+
 lde (2.0.0) utopic; urgency=medium
 
   * Change Ldeabout UI (Closes: #64)

@@ -144,7 +144,7 @@
        <x>10</x>
        <y>10</y>
        <width>361</width>
-       <height>31</height>
+       <height>41</height>
       </rect>
      </property>
      <property name="text">
@@ -166,7 +166,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;特别致谢：&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;LXQT Project (Razorqt-panel)&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;feh Project&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Debian Project&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;特别致谢：&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;LXQT Project (Razorqt-panel)&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;feh Project&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Debian Project&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
    </widget>
@@ -295,7 +295,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>v2.0.0</string>
+    <string>v2.0.1</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_2">
