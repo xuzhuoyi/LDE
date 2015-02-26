@@ -73,10 +73,13 @@ void Init::runDesktop()
     //...
 
     QProcess *mainProcess = new QProcess;
-    mainProcess->start("/usr/bin/openbox",NULL);
+    mainProcess->start("/usr/bin/compiz",NULL);
     QProcess *mainProcess2 = new QProcess;
-    mainProcess2->start("/usr/bin/razor-panel",NULL);
+    mainProcess2->start("/usr/bin/cairo-dock",NULL);
+    QProcess *mainProcess3 = new QProcess;
+    mainProcess3->start("/usr/bin/gdesklets",NULL);
     QProcess *wallpaperCon = new QProcess;
+
     QStringList runArgsList;
     QSettings settings(".LDE/lderc.ini",QSettings::IniFormat);
     QString wpSource = settings.value("wallPapers/source").toString();
