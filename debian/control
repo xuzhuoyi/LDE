@@ -10,7 +10,7 @@ Vcs-Browser: https://github.com/xuzhuoyi/LDE
 
 Package: lde
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libqt5core5a, libqt5gui5, libqt5network5, libqt5webkit5-dev, libqt5widgets5, compiz, cairo-dock, feh, gdesklets
+Depends: ${shlibs:Depends}, ${misc:Depends}, libqt5core5a, libqt5gui5, libqt5network5, libqt5webkit5-dev, libqt5widgets5, compiz, cairo-dock, feh, gdesklets, tint2
 Description: complete LDE Desktop Environment for end users
   LDE is the powerful, lightweight, and easy-to-use Free Software desktop platform and suite of applications.
   This package includes all the modules released with LDE Desktop Environment that are useful for a desktop user. This includes Looplorer, Looget, LDE Control Center, LooFm, Lootepad, and other useful utilities.

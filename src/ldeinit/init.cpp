@@ -76,8 +76,11 @@ void Init::runDesktop()
     mainProcess->start("/usr/bin/compiz",NULL);
     QProcess *mainProcess2 = new QProcess;
     mainProcess2->start("/usr/bin/cairo-dock",NULL);
-    QProcess *mainProcess3 = new QProcess;
-    mainProcess3->start("/usr/bin/gdesklets",NULL);
+    //QProcess *mainProcess3 = new QProcess;
+    //mainProcess3->start("/usr/bin/tint2",NULL);
+    QProcess *mainProcess4 = new QProcess;
+    mainProcess4->start("/usr/bin/gdesklets",NULL);
+    
     QProcess *wallpaperCon = new QProcess;
 
     QStringList runArgsList;
