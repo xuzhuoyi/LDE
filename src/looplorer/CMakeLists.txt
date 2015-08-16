@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8.11)
 
-project(loofm)
+project(looplorer)
 
 # Find includes in corresponding build directories
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
@@ -8,13 +8,11 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
 
+# Find the QtWidgets library
 find_package(Qt5Widgets)
-# find_package(Qt5LinguistTools)
-
-# qt5_add_translation(filemanager_zh.qm filemanager_zh.ts)
 
 # Tell CMake to create the helloworld executable
-add_executable(ldefm fileview.cpp main.cpp)
+add_executable(ldecc descc.cpp gencc.cpp lancc.cpp ldecc.cpp ldeccrc.qrc main.cpp safcc.cpp)
 
 # Use the Widgets module from Qt 5.
-target_link_libraries(ldefm Qt5::Widgets)
+target_link_libraries(ldecc Qt5::Widgets)

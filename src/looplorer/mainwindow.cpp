@@ -277,5 +277,3 @@ void MainWindow::closeWindow()
 {
     this->close();
 }
-
-
