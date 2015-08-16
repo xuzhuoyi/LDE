@@ -12,7 +12,7 @@ set(CMAKE_AUTOUIC ON)
 find_package(Qt5Widgets)
 
 # Tell CMake to create the helloworld executable
-add_executable(ldecc main.cpp widget.cpp)
+add_executable(loogout main.cpp widget.cpp)
 
 # Use the Widgets module from Qt 5.
-target_link_libraries(ldecc Qt5::Widgets)
+target_link_libraries(loogout Qt5::Widgets)

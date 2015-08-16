@@ -10,9 +10,11 @@ set(CMAKE_AUTOUIC ON)
 
 # Find the QtWidgets library
 find_package(Qt5Widgets)
+find_package(Qt5Webkit)
+find_package(Qt5WebkitWidgets)
 
-# Tell CMake to create the helloworld executable
-add_executable(ldecc descc.cpp gencc.cpp lancc.cpp ldecc.cpp ldeccrc.qrc main.cpp safcc.cpp)
+# Tell CMake to create the executable
+add_executable(looplorer jquery.qrc main.cpp mainwindow.cpp)
 
 # Use the Widgets module from Qt 5.
-target_link_libraries(ldecc Qt5::Widgets)
+target_link_libraries(looplorer Qt5::Widgets Qt5::Webkit Qt5::WebkitWidgets)

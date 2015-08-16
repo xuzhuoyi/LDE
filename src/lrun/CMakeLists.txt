@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8.11)
 
-project(ldeget)
+project(lrun)
 
 # Find includes in corresponding build directories
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
@@ -12,7 +12,7 @@ set(CMAKE_AUTOUIC ON)
 find_package(Qt5Widgets)
 
 # Tell CMake to create the executable
-add_executable(ldeget main.cpp widget.cpp)
+add_executable(lrun main.cpp widget.cpp)
 
 # Use the Widgets module from Qt 5.
-target_link_libraries(ldeget Qt5::Widgets)
+target_link_libraries(lrun Qt5::Widgets)

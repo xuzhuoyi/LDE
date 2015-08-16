@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8.11)
 
-project(ldeget)
+project(lootepad)
 
 # Find includes in corresponding build directories
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
@@ -11,8 +11,8 @@ set(CMAKE_AUTOUIC ON)
 # Find the QtWidgets library
 find_package(Qt5Widgets)
 
-# Tell CMake to create the executable
-add_executable(ldeget main.cpp widget.cpp)
+# Tell CMake to create the helloworld executable
+add_executable(lootepad main.cpp mainwindow.cpp rc.qrc texteditor.cpp textedittab.cpp)
 
 # Use the Widgets module from Qt 5.
-target_link_libraries(ldeget Qt5::Widgets)
+target_link_libraries(lootepad Qt5::Widgets)
