@@ -9,7 +9,7 @@ TextEditTab::TextEditTab(MainWindow *parent):
     QTabWidget(parent)
 {
     auto par = parent;
-    connect(this, SIGNAL(addEditTab()), this, SLOT(on_TextEditTab_addEditTab()));
+    connect(this, SIGNAL(addEditTab(MainWindow*)), this, SLOT(on_TextEditTab_addEditTab(MainWindow*)));
 
     textEditorList = new QList<TextEditor*>;
     TextEditor *textLine = new TextEditor(par);
@@ -24,9 +24,9 @@ TextEditTab::~TextEditTab()
 
 }
 
-void TextEditTab::on_TextEditTab_addEditTab()
+void TextEditTab::on_TextEditTab_addEditTab(MainWindow *parent)
 {
-    TextEditor *tEdit = new TextEditor;
+    TextEditor *tEdit = new TextEditor(parent);
     this->addTab(tEdit, "untitled");
     textEditorList->append(tEdit);
 }

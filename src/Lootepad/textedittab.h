@@ -19,10 +19,10 @@ public:
     QList<TextEditor*> *textEditorList;
 
 signals:
-    void addEditTab();
+    void addEditTab(MainWindow *parent = 0);
 
 private slots:
-    void on_TextEditTab_addEditTab();
+    void on_TextEditTab_addEditTab(MainWindow *parent = 0);
     void onCurrentChanged(int index);
 
 

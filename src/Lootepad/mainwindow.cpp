@@ -15,7 +15,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     isSaved = false;
     curFile = tr("untitled.txt");
-    formTitle = curFile + tr(" - Lootepad 0.9");
+    formTitle = curFile + tr(" - Lootepad 0.10");
     setWindowTitle(formTitle);
     textEditTab = new TextEditTab(this);
     ui->gridLayout->addWidget(textEditTab);
@@ -48,7 +48,7 @@ void MainWindow::on_action_SaveAs_triggered()
 
 void MainWindow::on_action_Help_triggered()
 {
-    QMessageBox::information(this,tr("版本说明"),tr("lootepad 0.9.0"));
+    QMessageBox::information(this,tr("版本说明"),tr("lootepad 0.10.1"));
 }
 
 
@@ -63,7 +63,7 @@ void MainWindow::on_action_Close_triggered()
     textEditTab->currentTEditor->do_file_SaveOrNot();
     textEditTab->currentTEditor->setVisible(false);
     first_statusLabel->setText(tr("文本编辑器已关闭"));
-    second_statusLabel->setText(tr("Lootepad 0.9.0"));
+    second_statusLabel->setText(tr("Lootepad 0.10.1"));
 }
 
 void MainWindow::on_action_Quit_triggered()
@@ -129,7 +129,7 @@ void MainWindow::init_statusBar()
     bar->addWidget(first_statusLabel);
     bar->addWidget(second_statusLabel);
     first_statusLabel->setText(tr("欢迎使用文本编辑器"));
-    second_statusLabel->setText(tr("Lootepad 0.9.0"));
+    second_statusLabel->setText(tr("Lootepad 0.10.1"));
 }
 
 void MainWindow::do_cursorChanged()
@@ -148,12 +148,12 @@ void MainWindow::on_action_triggered()
 void MainWindow::on_action_LDE_triggered()
 {
     QProcess *mainProcess = new QProcess;
-    mainProcess->start("/usr/bin/ldeabout",NULL);
+    mainProcess->start("ldeabout",NULL);
 }
 
 void MainWindow::on_actionNewTab_triggered()
 {
-    emit textEditTab->addEditTab();
+    emit textEditTab->addEditTab(this);
 }
 
 void MainWindow::on_second_statusLabel_updateText(QString text)
