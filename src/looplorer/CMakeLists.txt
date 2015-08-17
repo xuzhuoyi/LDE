@@ -10,11 +10,11 @@ set(CMAKE_AUTOUIC ON)
 
 # Find the QtWidgets library
 find_package(Qt5Widgets)
-find_package(Qt5Webkit)
-find_package(Qt5WebkitWidgets)
+find_package(Qt5WebKit)
+find_package(Qt5WebKitWidgets)
 
 # Tell CMake to create the executable
 add_executable(looplorer jquery.qrc main.cpp mainwindow.cpp)
 
 # Use the Widgets module from Qt 5.
-target_link_libraries(looplorer Qt5::Widgets Qt5::Webkit Qt5::WebkitWidgets)
+target_link_libraries(looplorer Qt5::Widgets Qt5::WebKit Qt5::WebKitWidgets)
