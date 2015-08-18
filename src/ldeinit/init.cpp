@@ -55,12 +55,11 @@ void Init::startInit()
     }
 }
 
-Init::Init()
+Init::Init(int mode)
 {
+    initMode = mode;
     if (isFirstLogin())
         initMode = 2;
-    else
-        initMode = 1;
     startInit();
 }
 

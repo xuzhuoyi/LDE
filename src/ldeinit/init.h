@@ -30,7 +30,7 @@ private:
     void initUser();
 
 public:
-    Init();
+    Init(int mode = 1);
     void runDesktop();
     int initMode;
 };

@@ -26,11 +26,20 @@
  * END_COMMON_COPYRIGHT_HEADER */
 
 #include <QCoreApplication>
+#include <QCommandLineOption>
+#include <QCommandLineParser>
 #include "init.h"
 
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
-    Init app;
+    QCommandLineOption opMode("m");
+    opMode.setValueName("mode");
+    QCommandLineParser parser;
+    parser.addOption(opMode);
+    parser.process(a);
+    int m = parser.isSet(opMode) ? parser.value(opMode).toInt() : 1;
+    Init *app;
+    app = new Init(m);
     return a.exec();
 }
