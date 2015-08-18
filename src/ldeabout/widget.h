@@ -3,6 +3,8 @@
 
 #include <QWidget>
 
+#define LDE_VERSION "2.1"
+
 namespace Ui {
 class Widget;
 }
