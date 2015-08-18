@@ -42,7 +42,9 @@
 #define CALCULATOR_H
 
 #include <QWidget>
-#include <QMenu>
+
+class QMenu;
+class History;
 
 QT_BEGIN_NAMESPACE
 class QLineEdit;
@@ -72,6 +74,8 @@ private slots:
     void setMemory();
     void addToMemory();
     void popMenu();
+    void openHistory();
+    void openAbout();
 
 private:
     Button *createButton(const QString &text, const char *member);
@@ -89,6 +93,9 @@ private:
 
     enum { NumDigitButtons = 10 };
     Button *digitButtons[NumDigitButtons];
+    QMenu *m_pMenuMain;
+
+    History *m_pHistory;
 };
 
 #endif

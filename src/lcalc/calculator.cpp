@@ -40,11 +40,13 @@
 
 #include <QtWidgets>
 #include <QMessageBox>
+#include <QMenu>
 
 #include <math.h>
 
 #include "button.h"
 #include "calculator.h"
+#include "history.h"
 
 Calculator::Calculator(QWidget *parent)
     : QWidget(parent)
@@ -54,7 +56,15 @@ Calculator::Calculator(QWidget *parent)
     factorSoFar = 0.0;
     waitingForOperand = true;
 
-    Button *menuButton = createButton(tr("LCalc"), SLOT(popMenu()));
+    m_pHistory = new History;
+
+    m_pMenuMain = new QMenu;
+    m_pMenuMain->addAction(tr("历史记录"), this, SLOT(openHistory()));
+    m_pMenuMain->addAction(tr("关于"), this, SLOT(openAbout()));
+
+    Button *menuButton = new Button(tr("Menu"));
+    menuButton->setMenu(m_pMenuMain);
+    menuButton->setPopupMode(QToolButton::InstantPopup);
 
     display = new QLineEdit("0");
     display->setReadOnly(true);
@@ -244,6 +254,7 @@ void Calculator::equalClicked()
     }
 
     display->setText(QString::number(sumSoFar));
+    m_pHistory->listHistory()->prepend(sumSoFar);
     sumSoFar = 0.0;
     waitingForOperand = true;
 }
@@ -356,4 +367,15 @@ bool Calculator::calculate(double rightOperand, const QString &pendingOperator)
 void Calculator::popMenu()
 {
     QMessageBox::information(NULL, "LCalc", "LCalc V0.91");
+}
+
+void Calculator::openAbout()
+{
+
+}
+
+void Calculator::openHistory()
+{
+    m_pHistory->refreshList();
+    m_pHistory->show();
 }

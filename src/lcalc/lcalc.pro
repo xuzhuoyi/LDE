@@ -1,10 +1,12 @@
 QT += widgets
 
 HEADERS       = button.h \
-                calculator.h
+                calculator.h \
+    history.h
 SOURCES       = button.cpp \
                 calculator.cpp \
-                main.cpp
+                main.cpp \
+    history.cpp
 
 DESTDIR += ../../usr/bin
 
