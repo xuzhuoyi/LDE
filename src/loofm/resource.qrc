@@ -14,6 +14,7 @@
         <file>images/122.png</file>
         <file>images/90.png</file>
         <file>images/115.png</file>
+        <file>images/go-down.svg</file>
     </qresource>
     <qresource prefix="/images/menu">
         <file alias="menu">images/runtonewscript.png</file>

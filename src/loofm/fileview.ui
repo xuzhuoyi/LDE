@@ -6,15 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>523</width>
-    <height>320</height>
+    <width>716</width>
+    <height>449</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>LooFM</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout">
-   <item>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="0" column="0" colspan="2">
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
       <widget class="QToolButton" name="backButton">
@@ -92,57 +92,7 @@
       </widget>
      </item>
      <item>
-      <widget class="Line" name="line">
-       <property name="orientation">
-        <enum>Qt::Vertical</enum>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QToolButton" name="listButton">
-       <property name="styleSheet">
-        <string notr="true">border-style: flat;</string>
-       </property>
-       <property name="text">
-        <string>图标视图</string>
-       </property>
-       <property name="icon">
-        <iconset resource="resource.qrc">
-         <normaloff>:/images/buttons/images/viewlist-24.png</normaloff>:/images/buttons/images/viewlist-24.png</iconset>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>24</width>
-         <height>24</height>
-        </size>
-       </property>
-       <property name="toolButtonStyle">
-        <enum>Qt::ToolButtonTextBesideIcon</enum>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QToolButton" name="detailButton">
-       <property name="styleSheet">
-        <string notr="true">border-style: flat;</string>
-       </property>
-       <property name="text">
-        <string>细节视图</string>
-       </property>
-       <property name="icon">
-        <iconset resource="resource.qrc">
-         <normaloff>:/images/buttons/images/viewdetailed-24.png</normaloff>:/images/buttons/images/viewdetailed-24.png</iconset>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>24</width>
-         <height>24</height>
-        </size>
-       </property>
-       <property name="toolButtonStyle">
-        <enum>Qt::ToolButtonTextBesideIcon</enum>
-       </property>
-      </widget>
+      <widget class="QLineEdit" name="lineEdit"/>
      </item>
      <item>
       <widget class="QToolButton" name="controlButton">
@@ -170,12 +120,35 @@
        </property>
       </widget>
      </item>
+     <item>
+      <widget class="QToolButton" name="controlButton_2">
+       <property name="styleSheet">
+        <string notr="true">border-style: flat;</string>
+       </property>
+       <property name="text">
+        <string>更多</string>
+       </property>
+       <property name="icon">
+        <iconset resource="resource.qrc">
+         <normaloff>:/images/buttons/images/go-down.svg</normaloff>:/images/buttons/images/go-down.svg</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="popupMode">
+        <enum>QToolButton::InstantPopup</enum>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextBesideIcon</enum>
+       </property>
+      </widget>
+     </item>
     </layout>
    </item>
-   <item>
-    <widget class="QLineEdit" name="lineEdit"/>
-   </item>
-   <item>
+   <item row="1" column="0">
     <widget class="QStackedWidget" name="stackedWidget">
      <property name="frameShape">
       <enum>QFrame::NoFrame</enum>
@@ -198,6 +171,56 @@
       </layout>
      </widget>
     </widget>
+   </item>
+   <item row="1" column="1">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QToolButton" name="detailButton">
+       <property name="styleSheet">
+        <string notr="true">border-style: flat;</string>
+       </property>
+       <property name="text">
+        <string>细节视图</string>
+       </property>
+       <property name="icon">
+        <iconset resource="resource.qrc">
+         <normaloff>:/images/buttons/images/viewdetailed-24.png</normaloff>:/images/buttons/images/viewdetailed-24.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextUnderIcon</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="listButton">
+       <property name="styleSheet">
+        <string notr="true">border-style: flat;</string>
+       </property>
+       <property name="text">
+        <string>图标视图</string>
+       </property>
+       <property name="icon">
+        <iconset resource="resource.qrc">
+         <normaloff>:/images/buttons/images/viewlist-24.png</normaloff>:/images/buttons/images/viewlist-24.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextUnderIcon</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </item>
   </layout>
   <action name="backAction">

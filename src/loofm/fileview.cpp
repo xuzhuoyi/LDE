@@ -96,6 +96,8 @@ fileview::fileview(QWidget *parent) :
     connect(listModel,SIGNAL(dataChanged(QModelIndex,QModelIndex)),this,SLOT(changeModel()));
 
     ui->lineEdit->setText("/");
+    ui->detailButton->hide();
+    ui->listButton->hide();
 }
 
 fileview::~fileview()
@@ -448,4 +450,18 @@ void fileview::on_action_LDE_triggered()
 void fileview::on_exitAction_triggered()
 {
     exit(0);
+}
+
+void fileview::on_controlButton_2_clicked()
+{
+    if(!ui->detailButton->isVisible())
+    {
+        ui->detailButton->show();
+        ui->listButton->show();
+        ui->controlButton_2->setText(tr("隐藏"));
+        return;
+    }
+    ui->detailButton->hide();
+    ui->listButton->hide();
+    ui->controlButton_2->setText(tr("更多"));
 }

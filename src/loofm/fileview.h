@@ -71,6 +71,7 @@ private slots:
     void on_refreshAction_triggered();
     void on_action_LDE_triggered();
     void on_exitAction_triggered();
+    void on_controlButton_2_clicked();
 };
 
 #endif // FILEVIEW_H
