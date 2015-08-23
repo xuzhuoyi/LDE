@@ -1,3 +1,9 @@
+lde (2.1.0) vivid; urgency=low
+
+  * Add Default xml of xfwm4 (Closes: #88)
+
+ -- Zhuoyi Xu (LDE Team) <xzy476386434@vip.qq.com>  Sun, 23 Aug 2015 23:11:41 +0800
+
 lde (2.0.1) utopic; urgency=low
 
   * Remove file conflict with LXDE (Closes: #68)

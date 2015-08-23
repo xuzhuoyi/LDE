@@ -72,7 +72,7 @@ void Init::runDesktop()
     //...
 
     QProcess *mainProcess = new QProcess;
-    mainProcess->start("/usr/bin/openbox",NULL);
+    mainProcess->start("/usr/bin/xfwm4",NULL);
     QProcess *mainProcess2 = new QProcess;
     mainProcess2->start("/usr/bin/razor-panel",NULL);
     QProcess *wallpaperCon = new QProcess;

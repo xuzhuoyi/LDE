@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Zhuoyi Xu <xzy476386434@vip.qq.com>
 Build-Depends: debhelper (>= 8.0.0), libqt5core5a, libqt5gui5, libqt5network5, libqt5webkit5-dev, libqt5widgets5, libqt5opengl5-dev, qt5-qmake
 Standards-Version: 3.9.4
-Homepage: http://xuzhuoyi.github.io
+Homepage: http://ldeteam.tk
 Vcs-Git: git://github.com/xuzhuoyi/LDE.git
 Vcs-Browser: https://github.com/xuzhuoyi/LDE
 
