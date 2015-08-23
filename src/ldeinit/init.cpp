@@ -94,6 +94,8 @@ bool Init::isFirstLogin()
 
 void Init::initUser()
 {
+    if (QFile::exists(".LDE/lderc.ini"))
+        QFile::remove(".LDE/lderc.ini");
     QSettings settings(".LDE/lderc.ini",QSettings::IniFormat);
     settings.setValue("wallPapers/source", "/usr/share/wallpapers/lde-default.png");
     settings.setValue("autoStart/appNum", 0);
@@ -102,6 +104,12 @@ void Init::initUser()
     settings.setValue("theme/openbox-theme","lde-default");
     settings.setValue("font/fontConfigPreset","lde-default");
     settings.sync();
+    if (QFile::exists(".config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml"))
+        QFile::remove(".config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml");
+    if (QFile::exists(".config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml"))
+        QFile::remove(".config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml");
+    QFile::copy("/usr/share/LDE/defaults/xfwm4.xml", ".config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml");
+    QFile::copy("/usr/share/LDE/defaults/xsettings.xml", ".config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml");
 }
 
 //判断是否升级
