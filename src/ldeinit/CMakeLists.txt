@@ -15,3 +15,5 @@ add_executable(ldeinit init.cpp main.cpp)
 
 # Use the Widgets module from Qt 5.
 target_link_libraries(ldeinit Qt5::Core)
+
+INSTALL (TARGETS ldeinit RUNTIME DESTINATION /usr/bin)

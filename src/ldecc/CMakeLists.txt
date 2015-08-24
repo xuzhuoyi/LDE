@@ -17,3 +17,5 @@ add_executable(ldecc descc.cpp gencc.cpp lancc.cpp ldecc.cpp ldeccrc.qrc main.cp
 
 # Use the Widgets module from Qt 5.
 target_link_libraries(ldecc Qt5::Widgets)
+
+INSTALL (TARGETS ldecc RUNTIME DESTINATION /usr/bin)

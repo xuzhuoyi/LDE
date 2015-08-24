@@ -15,3 +15,5 @@ add_executable(lcalc button.cpp calculator.cpp main.cpp)
 
 # Use the Widgets module from Qt 5.
 target_link_libraries(lcalc Qt5::Widgets)
+
+INSTALL (TARGETS lcalc RUNTIME DESTINATION /usr/bin)
