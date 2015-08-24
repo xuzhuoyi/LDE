@@ -19,3 +19,5 @@ add_executable(ldefm fileview.cpp main.cpp ${UIS_HDRS})
 
 # Use the Widgets module from Qt 5.
 target_link_libraries(ldefm Qt5::Widgets)
+
+INSTALL (TARGETS ldefm RUNTIME DESTINATION /usr/bin)

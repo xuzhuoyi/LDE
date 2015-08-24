@@ -17,3 +17,5 @@ add_executable(ldeabout main.cpp widget.cpp laboutwidget.cpp ${UIS_HDRS})
 
 # Use the Widgets module from Qt 5.
 target_link_libraries(ldeabout Qt5::Widgets)
+
+INSTALL (TARGETS ldeabout RUNTIME DESTINATION /usr/bin)

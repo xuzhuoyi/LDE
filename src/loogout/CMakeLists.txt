@@ -17,3 +17,5 @@ add_executable(loogout main.cpp widget.cpp ${UIS_HDRS})
 
 # Use the Widgets module from Qt 5.
 target_link_libraries(loogout Qt5::Widgets)
+
+INSTALL (TARGETS loogout RUNTIME DESTINATION /usr/bin)

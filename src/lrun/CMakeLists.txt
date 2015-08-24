@@ -17,3 +17,5 @@ add_executable(lrun main.cpp widget.cpp ${UIS_HDRS})
 
 # Use the Widgets module from Qt 5.
 target_link_libraries(lrun Qt5::Widgets)
+
+INSTALL (TARGETS lrun RUNTIME DESTINATION /usr/bin)
