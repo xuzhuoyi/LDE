@@ -9,12 +9,13 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
 
 find_package(Qt5Widgets)
+qt5_wrap_ui(UIS_HDRS widget.ui)
 # find_package(Qt5LinguistTools)
 
 # qt5_add_translation(filemanager_zh.qm filemanager_zh.ts)
 
 # Tell CMake to create the helloworld executable
-add_executable(ldefm fileview.cpp main.cpp)
+add_executable(ldefm fileview.cpp main.cpp ${UIS_HDRS})
 
 # Use the Widgets module from Qt 5.
 target_link_libraries(ldefm Qt5::Widgets)
