@@ -18,3 +18,5 @@ add_executable(looget main.cpp widget.cpp ${UIS_HDRS})
 
 # Use the Widgets module from Qt 5.
 target_link_libraries(looget Qt5::Widgets Qt5::Network)
+
+INSTALL (TARGETS looget RUNTIME DESTINATION /usr/bin)

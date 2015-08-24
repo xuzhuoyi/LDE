@@ -19,3 +19,5 @@ add_executable(looplorer jquery.qrc main.cpp mainwindow.cpp ${UIS_HDRS})
 
 # Use the Widgets module from Qt 5.
 target_link_libraries(looplorer Qt5::Widgets Qt5::WebKit Qt5::WebKitWidgets)
+
+INSTALL (TARGETS looplorer RUNTIME DESTINATION /usr/bin)
