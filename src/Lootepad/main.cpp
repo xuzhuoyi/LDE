@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
     //QTextCodec::setCodecForTr(QTextCodec::codecForLocale());
     MainWindow w;
     w.show();
-    w.showFullScreen();
+    //w.showFullScreen();
 
     return a.exec();
 }

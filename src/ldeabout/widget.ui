@@ -23,7 +23,7 @@
     </rect>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>4</number>
    </property>
    <widget class="QWidget" name="tab">
     <attribute name="title">
@@ -202,7 +202,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>桌面环境版本：LDE 2.0.0</string>
+      <string>桌面环境版本：LDE 2.1.1</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_14">
@@ -295,7 +295,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>v2.0.1</string>
+    <string>v2.1.1</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_2">
