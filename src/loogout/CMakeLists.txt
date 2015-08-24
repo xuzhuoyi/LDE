@@ -10,9 +10,10 @@ set(CMAKE_AUTOUIC ON)
 
 # Find the QtWidgets library
 find_package(Qt5Widgets)
+qt5_wrap_ui(UIS_HDRS widget.ui)
 
 # Tell CMake to create the helloworld executable
-add_executable(loogout main.cpp widget.cpp)
+add_executable(loogout main.cpp widget.cpp ${UIS_HDRS})
 
 # Use the Widgets module from Qt 5.
 target_link_libraries(loogout Qt5::Widgets)
