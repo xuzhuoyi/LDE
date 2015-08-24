@@ -8,4 +8,4 @@
 	dh $@
 
 override_dh_auto_configure:
-	cmake src
+	cmake .

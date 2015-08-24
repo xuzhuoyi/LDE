@@ -16,9 +16,3 @@ MESSAGE(STATUS "Project Directory: ${PROJECT_SOURCE_DIR}")
 # SET(CMAKE_C_FLAGS_DEBUG "-g -Wall")                     #指定编译器
 
 ADD_SUBDIRECTORY(ldesrc)                               #添加子目录
-
-install(DIRECTORY share/ DESTINATION /usr/share/applications/)
-install(FILE shell/startlde DESTINATION /usr/bin/)
-install(FILE xsessions/LDE.desktop DESTINATION /usr/share/xsessions/)
-install(FILE wallpapers/lde-default.png DESTINATION /usr/share/wallpapers/)
-install(FILE xsessions/LDE.desktop DESTINATION /usr/share/apps/kdm/sessions/)

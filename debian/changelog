@@ -1,3 +1,9 @@
+lde (2.1.1) vivid; urgency=low
+
+  * Merge pull request #2 from xuzhuoyi/cmake-install (Closes: #96)
+
+ -- Zhuoyi Xu (LDE Team) <xzy476386434@vip.qq.com>  Mon, 24 Aug 2015 20:55:57 +0800
+
 lde (2.1.0) vivid; urgency=low
 
   * Add Default xml of xfwm4 (Closes: #88)
