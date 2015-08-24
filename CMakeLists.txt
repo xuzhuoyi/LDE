@@ -15,4 +15,4 @@ MESSAGE(STATUS "Project Directory: ${PROJECT_SOURCE_DIR}")
 
 # SET(CMAKE_C_FLAGS_DEBUG "-g -Wall")                     #指定编译器
 
-ADD_SUBDIRECTORY(ldesrc)                               #添加子目录
+ADD_SUBDIRECTORY(src)                               #添加子目录

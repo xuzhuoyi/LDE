@@ -5,7 +5,7 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8.11)                  #cmake 最低版本要求
                                                         #低于2.8.11 构建过程会被终止
 
-PROJECT(ldesrc)                                 #定义工程名称
+PROJECT(src)                                 #定义工程名称
 
 MESSAGE(STATUS "Project: LDE")                       #打印相关消息消息
 MESSAGE(STATUS "Project Directory: ${PROJECT_SOURCE_DIR}")

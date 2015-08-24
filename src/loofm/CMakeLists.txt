@@ -9,7 +9,7 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
 
 find_package(Qt5Widgets)
-qt5_wrap_ui(UIS_HDRS widget.ui)
+qt5_wrap_ui(UIS_HDRS fileview.ui)
 # find_package(Qt5LinguistTools)
 
 # qt5_add_translation(filemanager_zh.qm filemanager_zh.ts)

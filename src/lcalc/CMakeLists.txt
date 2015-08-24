@@ -11,7 +11,7 @@ set(CMAKE_AUTOMOC ON)
 find_package(Qt5Widgets)
 
 # Tell CMake to create the helloworld executable
-add_executable(lcalc button.cpp calculator.cpp main.cpp)
+add_executable(lcalc button.cpp calculator.cpp main.cpp history.cpp)
 
 # Use the Widgets module from Qt 5.
 target_link_libraries(lcalc Qt5::Widgets)

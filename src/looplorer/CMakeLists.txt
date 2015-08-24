@@ -12,10 +12,9 @@ set(CMAKE_AUTOUIC ON)
 find_package(Qt5Widgets)
 find_package(Qt5WebKit)
 find_package(Qt5WebKitWidgets)
-qt5_wrap_ui(UIS_HDRS widget.ui)
 
 # Tell CMake to create the executable
-add_executable(looplorer jquery.qrc main.cpp mainwindow.cpp ${UIS_HDRS})
+add_executable(looplorer jquery.qrc main.cpp mainwindow.cpp)
 
 # Use the Widgets module from Qt 5.
 target_link_libraries(looplorer Qt5::Widgets Qt5::WebKit Qt5::WebKitWidgets)

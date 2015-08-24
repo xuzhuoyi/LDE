@@ -7,10 +7,11 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 # Instruct CMake to run moc automatically when needed.
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
 # Find the QtWidgets library
 find_package(Qt5Widgets)
-qt5_wrap_ui(UIS_HDRS widget.ui)
+qt5_wrap_ui(UIS_HDRS mainwindow.ui)
 
 # Tell CMake to create the helloworld executable
 add_executable(lootepad main.cpp mainwindow.cpp rc.qrc texteditor.cpp textedittab.cpp ${UIS_HDRS})
