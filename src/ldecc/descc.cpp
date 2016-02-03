@@ -3,9 +3,9 @@
 #include <QFileDialog>
 #include <QString>
 #include <QDebug>
-#include <QSettings>
-#include <QDir>
 #include <QProcess>
+#include <lconfig.h>
+#include <lconfigfile.h>
 
 Descc::Descc(QWidget *parent) :
     QWidget(parent),
@@ -44,8 +44,9 @@ void Descc::on_pushButton_3_clicked()
 
 void Descc::on_pushButton_4_clicked()
 {
-    QString fileRc = QDir::homePath() + "/.LDE/lderc.ini";
-    QSettings set(fileRc, QSettings::IniFormat);
+    QString fileRc = LConfig::homePath() + "/.LDE/lderc.ini";
+    LConfigFile *configFile = new LConfigFile(fileRc);
+    LConfig set(configFile);
     set.setValue("wallPapers/source", fileName);
     set.sync();
 

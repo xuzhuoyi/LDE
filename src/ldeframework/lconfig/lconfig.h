@@ -2,14 +2,13 @@
 #define LCONFIG_H
 
 #include <QSettings>
-#include "lconfig_global.h"
 #include "lconfigfile.h"
 
-class LCONFIGSHARED_EXPORT LConfig : public QSettings
+class LConfig : public QSettings
 {
 
 public:
-    LConfig(LConfigFile confFile, QObject *parent = 0);
+    LConfig(LConfigFile *confFile, QObject *parent = 0);
     static QString homePath();
 };
 

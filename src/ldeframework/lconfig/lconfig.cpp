@@ -2,7 +2,7 @@
 #include <QDir>
 
 
-LConfig::LConfig(LConfigFile confFile, QObject * parent = 0) : QSettings(confFile.fileName(), QSettings::IniFormat, parent)
+LConfig::LConfig(LConfigFile *confFile, QObject * parent) : QSettings(confFile->fileName(), QSettings::IniFormat, parent)
 {
 
 }

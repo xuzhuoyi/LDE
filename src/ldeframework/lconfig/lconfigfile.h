@@ -2,9 +2,8 @@
 #define LCONFIGFILE_H
 
 #include <QFile>
-#include "lconfig_global.h"
 
-class LCONFIGSHARED_EXPORT LConfigFile : public QFile
+class LConfigFile : public QFile
 {
     Q_OBJECT
 public:
