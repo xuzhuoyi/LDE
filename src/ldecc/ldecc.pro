@@ -13,6 +13,7 @@ DESTDIR += ../../usr/bin
 TARGET = ldecc
 TEMPLATE = app
 
+include(../ldeframework/lconfig/lconfig.pri)
 
 SOURCES += main.cpp\
         ldecc.cpp \
@@ -39,4 +40,3 @@ RESOURCES += \
 # install
 target.path = /usr/bin
 INSTALLS += target
-

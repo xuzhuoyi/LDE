@@ -4,16 +4,17 @@
 #
 #-------------------------------------------------
 
+INCLUDEPATH += $$PWD
+DEPENDPATH += $$PWD
 
+SOURCES += $$PWD/lconfig.cpp \
+    $$PWD/lconfigfile.cpp \
+    $$PWD/lconfigbase.cpp \
+    $$PWD/lconfigitem.cpp \
+    $$PWD/lconfiggroup.cpp
 
-SOURCES += lconfig.cpp \
-    lconfigfile.cpp \
-    lconfigbase.cpp \
-    lconfigitem.cpp \
-    lconfiggroup.cpp
-
-HEADERS += lconfig.h\
-    lconfigfile.h \
-    lconfigbase.h \
-    lconfigitem.h \
-    lconfiggroup.h
+HEADERS += $$PWD/lconfig.h\
+    $$PWD/lconfigfile.h \
+    $$PWD/lconfigbase.h \
+    $$PWD/lconfigitem.h \
+    $$PWD/lconfiggroup.h
