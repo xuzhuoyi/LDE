@@ -9,6 +9,7 @@ class LApplication : public QApplication
 {
 public:
     LApplication(int &argc, char **argv);
+    void setTheme(const QString & theme);
 };
 
 #endif // LAPPLICATION_H

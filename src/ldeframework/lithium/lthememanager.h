@@ -11,6 +11,7 @@ public:
 
     static LThemeManager * instance();
     QString getQssForWidget(QString className);
+    void setTheme(const QString theme);
 signals:
     void themeChanged(QString theme);
 

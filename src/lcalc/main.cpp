@@ -38,13 +38,14 @@
 **
 ****************************************************************************/
 
-#include <QApplication>
+#include <lapplication.h>
 
 #include "calculator.h"
 
 int main(int argc, char *argv[])
 {
-    QApplication app(argc, argv);
+    LApplication app(argc, argv);
+    app.setTheme("dark");
     Calculator calc;
     calc.show();
     return app.exec();

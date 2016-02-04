@@ -35,3 +35,12 @@ QString LThemeManager::getQssForWidget(QString className)
     return qss;
 }
 
+void LThemeManager::setTheme(const QString theme)
+{
+    if (m_theme != theme) {
+        m_theme = theme;
+
+        emit themeChanged(theme);
+    }
+}
+
