@@ -41,9 +41,9 @@
 #ifndef BUTTON_H
 #define BUTTON_H
 
-#include <QToolButton>
+#include <ltextbutton.h>
 
-class Button : public QToolButton
+class Button : public LTextButton
 {
     Q_OBJECT
 

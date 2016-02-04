@@ -64,7 +64,7 @@ Calculator::Calculator(QWidget *parent)
 
     Button *menuButton = new Button(tr("Menu"));
     menuButton->setMenu(m_pMenuMain);
-    menuButton->setPopupMode(QToolButton::InstantPopup);
+    //menuButton->setPopupMode(QToolButton::InstantPopup);
 
     display = new QLineEdit("0");
     display->setReadOnly(true);

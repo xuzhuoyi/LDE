@@ -9,9 +9,15 @@ class LThemeManager : public QObject
 public:
     explicit LThemeManager(QObject *parent = 0);
 
+    static LThemeManager * instance();
+    QString getQssForWidget(QString className);
 signals:
+    void themeChanged(QString theme);
 
 public slots:
+
+protected:
+    QString m_theme;
 };
 
 #endif // LTHEMEMANAGER_H

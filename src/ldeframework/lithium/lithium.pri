@@ -7,6 +7,8 @@
 INCLUDEPATH += $$PWD
 DEPENDPATH += $$PWD
 
+CONFIG += c++11
+
 SOURCES +=\
     $$PWD/lpushbutton.cpp \
     $$PWD/lthememanager.cpp \

@@ -43,7 +43,7 @@
 #include "button.h"
 
 Button::Button(const QString &text, QWidget *parent)
-    : QToolButton(parent)
+    : LTextButton(text, parent)
 {
     setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Preferred);
     setText(text);
@@ -51,7 +51,7 @@ Button::Button(const QString &text, QWidget *parent)
 
 QSize Button::sizeHint() const
 {
-    QSize size = QToolButton::sizeHint();
+    QSize size = LTextButton::sizeHint();
     size.rheight() += 20;
     size.rwidth() = qMax(size.width(), size.height());
     return size;

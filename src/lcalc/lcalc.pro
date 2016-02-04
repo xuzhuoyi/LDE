@@ -2,10 +2,10 @@ QT += widgets
 
 include(../ldeframework/lithium/lithium.pri)
 
-HEADERS       = button.h \
+HEADERS       += button.h \
                 calculator.h \
     history.h
-SOURCES       = button.cpp \
+SOURCES       += button.cpp \
                 calculator.cpp \
                 main.cpp \
     history.cpp

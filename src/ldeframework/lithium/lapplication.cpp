@@ -1,6 +1,7 @@
 #include "lapplication.h"
 
-LApplication::LApplication()
+LApplication::LApplication(int &argc, char **argv) :
+    QApplication(argc, argv)
 {
 
 }

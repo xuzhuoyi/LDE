@@ -4,6 +4,12 @@
 LPushButton::LPushButton(QWidget *parent) :
     QPushButton(parent)
 {
-    D_THEME_INIT_WIDGET(LPushButton);
+    L_THEME_INIT_WIDGET(LPushButton);
+}
+
+LPushButton::LPushButton(QString const &text, QWidget *parent) :
+    QPushButton(text, parent)
+{
+    L_THEME_INIT_WIDGET(LPushButton);
 }
 

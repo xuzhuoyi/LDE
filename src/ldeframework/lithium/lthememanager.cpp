@@ -1,5 +1,6 @@
 #include "lthememanager.h"
 #include <QIODevice>
+#include <QFile>
 
 
 class LThemeManagerPrivate : public LThemeManager

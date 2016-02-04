@@ -3,11 +3,12 @@
 
 #include <QObject>
 #include <QWidget>
+#include <QApplication>
 
 class LApplication : public QApplication
 {
 public:
-    LApplication();
+    LApplication(int &argc, char **argv);
 };
 
 #endif // LAPPLICATION_H
