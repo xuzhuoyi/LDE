@@ -3,11 +3,12 @@
 
 #include <QObject>
 #include <QWidget>
+#include <lpushbutton.h>
 
 class LTextButton : public LPushButton
 {
 public:
-    LTextButton();
+    LTextButton(const QString &text, QWidget *parent = 0);
 };
 
 #endif // LTEXTBUTTON_H

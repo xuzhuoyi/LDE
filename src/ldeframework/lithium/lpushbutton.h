@@ -7,7 +7,7 @@
 class LPushButton : public QPushButton
 {
 public:
-    LPushButton();
+    LPushButton(QWidget *parent = 0);
 };
 
 #endif // LPUSHBUTTON_H
