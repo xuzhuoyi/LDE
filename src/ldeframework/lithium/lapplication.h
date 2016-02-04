@@ -7,6 +7,7 @@
 
 class LApplication : public QApplication
 {
+    Q_OBJECT
 public:
     LApplication(int &argc, char **argv);
     void setTheme(const QString & theme);

@@ -41,6 +41,7 @@
 #include <QtWidgets>
 #include <QMessageBox>
 #include <QMenu>
+#include <QDebug>
 
 #include <math.h>
 
@@ -66,6 +67,8 @@ Calculator::Calculator(QWidget *parent)
     menuButton->setMenu(m_pMenuMain);
     //menuButton->setPopupMode(QToolButton::InstantPopup);
 
+    //qDebug() << menuButton->styleSheet() << endl;
+    //menuButton->setStyleSheet("LTextButton{background-color:blue;}");
     display = new QLineEdit("0");
     display->setReadOnly(true);
     display->setAlignment(Qt::AlignRight);

@@ -4,17 +4,17 @@ LTextButton {
     color: #CCCCCC;
     outline:none;
     border-width:5px 5px 5px 5px;
-    border-image:url(:/images/dark/images/dark_button_normal_bg.png) 5 5 5 5 stretch;
+    border-image:url(:/images/themes/dark/images/dark_button_normal_bg.png) 5 5 5 5 stretch;
     background-color:transparent;
 }
 
 LTextButton:hover {
     color: #AAA;
-    border-image:url(:/images/dark/images/dark_button_hover_bg.png) 5 5 5 5 stretch;
+    border-image:url(:/images/themes/dark/images/dark_button_hover_bg.png) 5 5 5 5 stretch;
 }
 
 LTextButton:pressed {
-    border-image:url(:/images/dark/images/dark_button_press_bg.png) 5 5 5 5 stretch;
+    border-image:url(:/images/themes/dark/images/dark_button_press_bg.png) 5 5 5 5 stretch;
 }
 
 LTextButton:checked {

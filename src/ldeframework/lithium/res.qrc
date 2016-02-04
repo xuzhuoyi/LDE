@@ -3,4 +3,9 @@
         <file>themes/dark/LPushButton.theme</file>
         <file>themes/dark/LTextButton.theme</file>
     </qresource>
+    <qresource prefix="/images">
+        <file>themes/dark/images/dark_button_hover_bg.png</file>
+        <file>themes/dark/images/dark_button_normal_bg.png</file>
+        <file>themes/dark/images/dark_button_press_bg.png</file>
+    </qresource>
 </RCC>

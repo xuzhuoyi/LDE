@@ -46,7 +46,6 @@ Button::Button(const QString &text, QWidget *parent)
     : LTextButton(text, parent)
 {
     setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Preferred);
-    setText(text);
 }
 
 QSize Button::sizeHint() const

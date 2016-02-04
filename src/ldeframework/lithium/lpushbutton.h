@@ -7,6 +7,7 @@
 
 class LPushButton : public QPushButton
 {
+    Q_OBJECT
 public:
     LPushButton(QWidget *parent = 0);
     LPushButton(QString const &text, QWidget *parent = 0);
