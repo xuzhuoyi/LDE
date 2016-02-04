@@ -4,23 +4,21 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
-
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
-
-TARGET = lithium
-TEMPLATE = app
-
+INCLUDEPATH += $$PWD
+DEPENDPATH += $$PWD
 
 SOURCES +=\
-    lpushbutton.cpp \
-    lthememanager.cpp \
-    lapplication.cpp \
-    ltextbutton.cpp
+    $$PWD/lpushbutton.cpp \
+    $$PWD/lthememanager.cpp \
+    $$PWD/lapplication.cpp \
+    $$PWD/ltextbutton.cpp
 
 HEADERS  += \
-    lpushbutton.h \
-    lthememanager.h \
-    lapplication.h \
-    ltextbutton.h \
-    lithium_global.h
+    $$PWD/lpushbutton.h \
+    $$PWD/lthememanager.h \
+    $$PWD/lapplication.h \
+    $$PWD/ltextbutton.h \
+    $$PWD/lithium_global.h
+
+RESOURCES += \
+    $$PWD/res.qrc

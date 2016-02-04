@@ -1,5 +1,7 @@
 QT += widgets
 
+include(../ldeframework/lithium/lithium.pri)
+
 HEADERS       = button.h \
                 calculator.h \
     history.h
@@ -13,4 +15,3 @@ DESTDIR += ../../usr/bin
 # install
 target.path = /usr/bin
 INSTALLS += target
-

@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>themes/dark/LBaseButton.theme</file>
+        <file>themes/dark/LTextButton.theme</file>
+    </qresource>
+</RCC>
