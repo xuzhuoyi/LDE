@@ -1,0 +1,5 @@
+#ifndef LITHIUM_GLOBAL
+#define LITHIUM_GLOBAL
+
+#endif // LITHIUM_GLOBAL
+
